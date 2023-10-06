@@ -2,26 +2,149 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  background-color: black;
+  color: white;
+}
+nav {
+  color: white;
+  font-size: xx-large;
+}
+ul {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+li:hover{
+background-color: white;
+color: black;
+padding: 1px;
+border-radius: 10px;
+transition: 0.3s linear;
+}
+li {
+  display: flex;
+  list-style: none;
+}
+section {
+  padding: 50px;
+}
+.Headingz {
+  margin-top: 5%;
+}
+.Context {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+}
+.card {
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  font-size: 1.25rem;
+  margin: 0;
+  color: black;
+}
+
+.card-content p {
+  margin: 10px 0;
+  color: black;
+}
+
+.card-content a {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.card-content a:hover {
+  transition: 0.3s linear;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.lang {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  column-gap: 10px;
+  place-items: center;
+  place-content: center;
+  margin-top: 50px;
+  font-size: x-large;
+}
+.items>p>a:hover{
+  border: 1px solid grey;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+@media (max-width: 460px) {
+  .container {
+    display: grid;
+    place-content: center;
+  }
+  nav {
+    font-size: 10px;
+    margin-bottom:30%;
+  }
+  .Context {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 15px;
+  }
+  .lang {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px;
+    row-gap: 30px;
+    column-gap: 5px;
+    place-items: center;
+    place-content: center;
+    margin-top: 50px;
+    font-size: small;
+  }
+
+  .items>p>a:hover{
+    border: 1px solid grey;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media (min-width: 820px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
