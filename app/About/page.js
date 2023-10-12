@@ -1,8 +1,23 @@
 import React from "react";
-
+import { ToastContainer,toast } from "react-toastify";
+const Notify = ()=>{
+  toast('Hey There!', {
+    position: "top-right",
+    autoClose: 1500,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark",
+    });
+  }
+  let onload = Notify();
 const About = () => {
+ 
   return (
     <>
+     <ToastContainer />
       <section className="section  mt-5" id="home" />
       <div className="sec__container flex justify-center">
         <div className="content mx-20 text-5xl justify-center">
@@ -10,13 +25,13 @@ const About = () => {
           <h2 className="title text-3xl">
             I'm{" "}
             <span>
-              Jenish <br /> a
+              Jenish a <br />  
             </span>
-            Web-developer.
+             Jr. Web-developer.
           </h2>
           <p className="description">Welcome to my website!</p>
           <div className="action__btns text-2xl mt-4 ">
-            <button className="hire__me rounded-xl bg-white text-black p-2 px-3">
+            <button className="hire_me rounded-xl bg-white text-black p-2 px-3">
               <a
                 href="https://www.linkedin.com/in/jenish-khemnani-b2ab31233/"
                 target="_blank"

@@ -5,12 +5,12 @@ import Image from "next/image";
 const skills = () => {
   return (
     <>
-      <Header />
+    <Header/>
       <h1 className="Headingz text-white flex justify-center text-3xl">
         Technologies I Work With
       </h1>
       <div className="Context flex justify-center">
-        <p className="">
+        <p className="flex-wrap">
           I create websites using HTML, CSS, and JavaScript, making them look
           great with Bootstrap.
           <br />
@@ -29,13 +29,12 @@ const skills = () => {
 
 
       <div className="lang">
-<div className="items">  <Image src={"/html-5.png"} height={100} width={100} /> </div>
-<div className="items">  <Image src={"/css-3.png"} height={100} width={100} /> </div>
-<div className="items">  <Image src={"/js.png"} height={100} width={100} /> </div>
-<div className="items">  <Image src={"/structure.png"} height={100} width={100} /> </div>
-<div className="items">  <Image src={"/nxt2.png"} height={100} width={100} /> </div>
-<div className="items">  <Image src={"/bootstrap.png"} height={100} width={100} /> </div>
-
+          <div className="items">  <Image src={"/html-5.png"} height={100} width={100} alt="HTML" /> </div>
+          <div className="items">  <Image src={"/css-3.png"} height={100} width={100} alt="css" /> </div>
+          <div className="items">  <Image src={"/js.png"} height={100} width={100} alt="JS" /> </div>
+          <div className="items">  <Image src={"/bootstrap.png"} height={100} width={100} alt="Bootstrap" /> </div>
+          <div className="items">  <Image src={"/structure.png"} height={100} width={100} alt="React js" /> </div>
+          <div className="items">  <Image src={"/nxt2.png"} height={100} width={100} alt="Next js" /> </div>
       </div>
     </>
   );
