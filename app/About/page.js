@@ -11,16 +11,12 @@ const page = () => {
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 m-5 ">
-        <div className="border p-4 rounded-2xl">
-          <div className="statusOfWork flex items-center justify-end gap-2">
-            <p className="h-3 w-3 rounded-lg bg-green-500 "></p>
-            <p className="text-md font-semibold">Available for work</p>
-          </div>
-          <p>Heyy,</p>
-          <h1 className="text-3xl font-bold">I'm Jenish</h1>
-          <p className="text-2xl font-normal">No super bio,</p>
-          <p className="text-2xl">Excited to learn new technologies!</p>
-          <p className="text-2xl">On a road to become MERN stack developer.</p>
+        <div className="border p-4 rounded-2xl h-full">
+          <p className=" ">Heyy,</p>
+          <h1 className="text-3xl font-bold ">I'm Jenish</h1>
+          <p className="text-2xl font-normal ">No super bio,</p>
+          <p className="text-2xl ">Excited to learn new technologies!</p>
+          <p className="text-2xl ">On a road to become MERN stack developer.</p>
         </div>
         <div className="border p-4 rounded-2xl backdrop-filter backdrop-blur-lg bg-opacity-30">
           <div className="skills text-black font-bold text-xl">
@@ -58,11 +54,16 @@ const page = () => {
         </div>
 
         <div className="border p-4 rounded-2xl">
-          <div className="email">
+          <div className="email flex justify-between items-center">
             <p className="text-xl font-bold">Email</p>
+            <div className="statusOfWork flex items-center justify-end gap-2">
+              <p className="h-3 w-3 rounded-lg bg-green-500 "></p>
+              <p className="text-md font-semibold">Available for work</p>
+            </div>
           </div>
-          <div className="email01 mt-7">
+          <div className="email01 mt-7 flex items-center justify-start ">
             <p className="font-bold text-lg">jimmykhemnani23@gmail.com</p>
+            
           </div>
           <div className="emailbtn mt-5 flex gap-3">
             <button
@@ -83,12 +84,17 @@ const page = () => {
           <div className="social flex flex-col justify-right">
             <p className="font-bold text-2xl">Let's connect </p>
             <p className="text-base font-semibold">on Social Media</p>
-          </div>
-          <div className="image flex justify-start">
-            <Image src={"/ava.png"}height={175} width={175}></Image>
+            <div className="image">
+            <Image
+              alt="Profile Image"
+              className="object-cover flex flex-wrap"
+              src={"/ava.png"}
+              height={100}
+              width={100}
+            />
+            </div>
           </div>
         </div>
-        
       </div>
     </>
   );
