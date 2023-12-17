@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <>
       <Button m="2" ref={btnRef} colorScheme="gray" onClick={onOpen}>
-      <IoMenu size='20px' />
+      <IoMenu size='30px' />
       </Button>
       <Drawer
         isOpen={isOpen}
