@@ -1,27 +1,47 @@
-import React from 'react'
-import Link from "next/link";
-import { ToastContainer, toast } from 'react-toastify';
+'use client'
+import { useRef } from 'react';
+import Link from 'next/link';
+import { IoMenu } from "react-icons/io5";
+import {
+  Drawer,
+  DrawerBody,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  useDisclosure,
+  Button,
+} from '@chakra-ui/react';
 
-  import 'react-toastify/dist/ReactToastify.css';
 const Header = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const btnRef = useRef(null);
+
   return (
     <>
-    <nav className=''>
-        <ul>
-          <li>
-            <Link href="/">About</Link>
-          </li>
-          <li>
-            <Link href="/Skills">Skills</Link>
-          </li>
-          <li><Link href='/Projectss'>Projects</Link></li>
-          <li> <Link href='/Contact'>Contact</Link> </li>
-          {/* <li><Link href='/Chill'>ChillZone</Link></li> */}
-        </ul>
-      </nav>
+      <Button m="2" ref={btnRef} colorScheme="gray" onClick={onOpen}>
+      <IoMenu size='20px' />
+      </Button>
+      <Drawer
+        isOpen={isOpen}
+        placement="left"
+        onClose={onClose}
+        finalFocusRef={btnRef}
+      >
+        <DrawerOverlay />
+        <DrawerContent>
+          <DrawerCloseButton />
+          <DrawerHeader textAlign="center" borderBottomWidth="1px">
+            J E N I S H
+          </DrawerHeader>
 
+          <DrawerBody p="4" m="auto">
+            <Link href="/Contact">Contact</Link>
+          </DrawerBody>
+        </DrawerContent>
+      </Drawer>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

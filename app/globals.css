@@ -2,163 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: black;
-  color: white;
-}
-nav {
-  color: white;
-  font-size: xx-large;
-}
-ul {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-li:hover{
-background-color: white;
-color: black;
-padding: 1px;
-border-radius: 10px;
-transition: 0.3s linear;
-}
-li {
-  display: flex;
-  list-style: none;
-}
-section {
-  padding: 50px;
-}
-.Headingz {
-  margin-top: 5%;
-}
-.Context {
-  margin-top: 2%;
-  display: flex;
-  justify-content: center;
-}
-.card {
-  width: 300px;
-  background-color: #fff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-  margin: 20px;
-}
 
-.card img {
-  width: 100%;
-  height: auto;
-}
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
 
-.card-content {
-  padding: 20px;
-}
 
-.card-content h2 {
-  font-size: 1.25rem;
-  margin: 0;
-  color: black;
-}
-
-.card-content p {
-  margin: 10px 0;
-  color: black;
-}
-
-.card-content a {
-  display: flex;
-  justify-content: center;
-  background-color: #000000;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 0;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-.card-content a:hover {
-  transition: 0.3s linear;
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-}
-
-.lang {
-  display: grid;
-  grid-template-columns: 100px 100px 100px 100px 100px 100px;
-  column-gap: 10px;
-  place-items: center;
-  place-content: center;
-  margin-top: 50px;
-  font-size: x-large;
-}
-.items>p>a:hover{
-  border: 1px solid grey;
-  padding: 20px;
-  background-color: white;
-  color: black;
-  border-radius: 15px;
-  transition: 0.5s ease-in-out;
-}
-.items{
-  cursor: pointer;
-}
-.portfolio:hover{
-  background-color: black;
-  color: white;
-  border: 1px solid white;
-  transition: 0.5s linear ease-in-out;
-}
-.hire_me:hover{
-  background-color: black;
-  color: white;
-  border: 1px solid white;
-  transition: 0.5s linear ease-in-out;
-}
-
-@media (max-width: 460px) {
-  .container {
-    display: grid;
-    place-content: center;
+/* .status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(40, 196, 40); 
   }
-  nav {
-    font-size: 15px;
-    margin-bottom:30%;
-  }
-  .Context {
-    font-size: 15px;
+  .availability {
     display: flex;
-    justify-content: center;
-    position: relative;
-    left: 15px;
-  }
-  .lang {
-    display: grid;
-    grid-template-columns: 50px 50px 50px;
-    grid-template-rows: 50px 50px 50px;
-    row-gap: 30px;
-    column-gap: 5px;
-    place-items: center;
-    place-content: center;
-    margin-top: 50px;
-  }
-
-  .items>p>a:hover{
-    border: 1px solid grey;
-    padding: 20px;
-    background-color: white;
-    color: black;
-    border-radius: 15px;
-    transition: 0.5s ease-in-out;
-  }
-}
-
-@media (min-width: 820px) {
-  .container {
+    align-items: center;
+    gap: 5px;
+  } 
+  .skills{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-}
+  } */

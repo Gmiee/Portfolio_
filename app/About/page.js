@@ -1,68 +1,41 @@
-"use client"
+"use client";
 import React from "react";
-import { ToastContainer,toast } from "react-toastify";
-const Notify = ()=>{
-  toast('Hey There!', {
-    position: "top-right",
-    autoClose: 1500,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "dark",
-    });
-  }
-  let onload = Notify();
-const About = () => {
- 
+
+const page = () => {
   return (
     <>
-     <ToastContainer />
-      <section className="section  mt-5" id="home" />
-      <div className="sec__container flex justify-center">
-        <div className="content mx-20 text-5xl justify-center">
-          <p className="subtitle text-2xl">HELLO</p>
-          <h2 className="title text-3xl">
-            I'm{" "}
-            <span>
-              Jenish a <br />  
-            </span>
-             Jr. Web-developer.
-          </h2>
-          <p className="description">Welcome to my website!</p>
-          <div className="action__btns text-2xl mt-4 ">
-            <button className="hire_me rounded-xl bg-white text-black p-2 px-3">
-              <a
-                href="https://www.linkedin.com/in/jenish-khemnani-b2ab31233/"
-                target="_blank"
-                className="AA"
-              >
-                {" "}
-                Hire Me!
-              </a>
-            </button>
-            <button className="portfolio ml-2 rounded-xl bg-white text-black p-2 px-3">
-              <a href="https://github.com/Gmiee" target="_blank">
-                Github
-              </a>
-            </button>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 m-4 ">
+        <div className="bg-gray-200 p-4 rounded-2xl">
+          <p>Heyy,</p>
+          <h1 className="text-3xl font-bold">I'm Jenish</h1>
+          <p className="text-2xl font-normal">No super bio,</p>
+          <p className="text-2xl">Excited to learn new technologies!</p>
+          <p className="text-2xl">On a road to become MERN stack developer.</p>
+          <div className="statusOfWork flex items-center gap-2">
+            <p className="h-3 w-3 rounded-lg bg-green-500 "></p>
+            <p className="text-md font-semibold">Available for work</p>
           </div>
         </div>
-        <div className="image flex justify-end  ">
-          <a
-            href="Jenish Khemnani.pdf"
-            title="Click on image to download resume"
-            download
-          >
-            {" "}
-            {/* <img className="flex rounded-full bottom-20 relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" src="squareME.jpg" alt="Image" /> */}
-          </a>
+        <div className="bg-gray-300 p-4 rounded-2xl backdrop-filter backdrop-blur-lg bg-opacity-30">
+        <div className="skills text-blue-600 font-bold text-xl">
+          <p>Skills</p>
         </div>
+        <div className="technologies flex flex-wrap justify-center mt-4 gap-3">
+          <p className="bg-slate-300 w-auto rounded-xl p-3 text-white font-semibold"> HTML&CSS</p>
+          <p className="bg-slate-300 w-auto rounded-xl p-3 text-white font-semibold"> JAVASCRIPT</p>
+          <p className="bg-slate-300 w-auto rounded-xl p-3 text-white font-semibold"> REACT .JS</p>
+          <p className="bg-slate-300 w-auto rounded-xl p-3 text-white font-semibold"> NEXT .JS</p>
+          <p className="bg-slate-300 w-auto rounded-xl p-3 text-white font-semibold"> BOOTSTRAP</p>
+          <p className="bg-slate-300 w-auto rounded-xl p-3 text-white font-semibold"> TAILWIND</p>
+        </div>
+        </div>
+
+        
+        <div className="bg-gray-400 p-4 rounded-2xl">Content 3</div>
+        <div className="bg-gray-500 p-4 rounded-2xl">Content 4</div>
       </div>
-      {/* </div> */}
     </>
   );
 };
 
-export default About;
+export default page;
