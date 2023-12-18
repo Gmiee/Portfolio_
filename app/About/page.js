@@ -11,7 +11,7 @@ const page = () => {
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 m-5 font-semibold">
-        <div className="border p-4 rounded-2xl h-full">
+        <div className="border p-4 rounded-2xl h-full shadow-xl ">
           <div className="skills text-black font-bold text-xl ">
             <p>About</p>
           </div>
@@ -21,7 +21,9 @@ const page = () => {
           <p className="text-2xl ">Excited to learn new technologies!</p>
           <p className="text-2xl ">On a road to become MERN stack developer.</p>
         </div>
-        <div className="border p-4 rounded-2xl backdrop-filter backdrop-blur-lg bg-opacity-30">
+
+
+        <div className="border p-4 rounded-2xl shadow-xl">
           <div className="skills text-black font-bold text-xl">
             <p>Skills</p>
           </div>
@@ -51,7 +53,7 @@ const page = () => {
               TAILWIND
             </p>
           </div>
-          
+
           <div className="projects flex justify-evenly items-center mt-16">
           <p className="text-sm from-neutral-400">
             Note: All these technologies are self-taught🚀
@@ -67,7 +69,8 @@ const page = () => {
           </div>
         </div>
 
-        <div className="border p-4 rounded-2xl">
+
+        <div className="border p-4 rounded-2xl shadow-xl">
           <div className="email flex justify-between items-center">
             <p className="text-xl font-bold">Email</p>
             <div className="statusOfWork flex items-center justify-end gap-1">
@@ -96,7 +99,7 @@ const page = () => {
             </Link>
           </div>
         </div>
-        <div className="border p-4 rounded-2xl">
+        <div className="border p-4 rounded-2xl shadow-xl">
           <div className="social flex items-center justify-evenly gap-3">
             <p className="font-bold sm:text-2xl text-base">Let's connect on Social Media</p>
             <p className="text-2xl font-semibold"></p>

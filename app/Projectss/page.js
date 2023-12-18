@@ -5,7 +5,7 @@ import Image from "next/image";
 const page = () => {
   return (
     <>
-     {/* <div className="flex justify-center items-center h-screen bg-gradient-to-br from-indigo-500 to-blue-600">
+     <div className="flex justify-center items-center h-screen bg-gradient-to-br from-indigo-500 to-blue-600">
       <div className="max-w-sm w-full bg-white bg-opacity-25 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg p-6">
         <h2 className="text-2xl font-bold text-white mb-4">Glass Card</h2>
         <p className="text-white opacity-80">
@@ -17,7 +17,7 @@ const page = () => {
           </button>
         </div>
       </div>
-    </div> */}
+    </div>
     </>
     
   );
