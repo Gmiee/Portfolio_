@@ -84,7 +84,7 @@ const page = () => {
           <div className="emailbtn mt-5 flex gap-3">
             <button
               onClick={copyEmail}
-              className="border font-bold py-2 px-4 rounded-md flex items-center gap-3 text-black hover:text-white bg-transparent hover:bg-black transition duration-300 ease-in-out sm:text-xs text-base"
+              className="border font-bold py-2 px-4 rounded-md flex items-center gap-3 text-black hover:text-white bg-transparent hover:bg-black transition duration-300 ease-in-out text-base"
             >
               Copy Email <BsCopy />
             </button>
