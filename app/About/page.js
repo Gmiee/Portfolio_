@@ -10,7 +10,7 @@ const copyEmail = () => {
 const page = () => {
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 m-5 font-semibold ">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 m-5 font-semibold">
         <div className="border p-4 rounded-2xl h-full">
           <div className="skills text-black font-bold text-xl ">
             <p>About</p>
@@ -57,7 +57,7 @@ const page = () => {
             Note: All these technologies are self-taught🚀
           </p>
           <Link
-            href="https://www.linkedin.com/in/jenish-khemnani-b2ab31233/"
+            href="https://jimmyyy.bio.link/"
             target="_blank"
           >
             <button className="border font-bold py-2 px-4 rounded-md flex items-center gap-3 text-white hover:text-black bg-black hover:bg-white">
