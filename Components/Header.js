@@ -38,9 +38,9 @@ const Header = () => {
 
           <DrawerBody p="4"  m="auto">
             <VStack>
-            <Link className='text-xl' href="/">Home</Link>
-            <Link className='text-xl' href="/Contact">Contact</Link>
-            <Link className='text-xl' href="/Projectss">Projects</Link>
+            <Link className='text-xl' href="/" onClick={onClose}>Home</Link>
+            <Link className='text-xl' href="/Contact" onClick={onClose}>Contact</Link>
+            {/* <Link className='text-xl' href="/Blog" onClick={onClose}>Blog</Link> */}
             </VStack>
           </DrawerBody>
         </DrawerContent>

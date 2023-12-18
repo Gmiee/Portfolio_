@@ -1,12 +1,10 @@
 import React from "react";
-import Header from "@/Components/Header";
 const page = () => {
   return (
     <>
-      <Header />
-      <h1 className='Headingz text-white flex justify-center text-3xl'>Contact</h1>
-      <div className="form flex justify-center mt-7">
-        <form method="POST" action="https://formspree.io/f/xayglawa">
+    <div className="title text-4xl flex justify-center items-center mx-auto mt-10 font-black mb-11">CONTACT ME!</div>
+   <div className="form flex justify-center items-center flex-col my-11 border-gray-300 border-2 p-11 rounded-lg sm:mx-auto lg:mx-80">
+    <form method="POST" action="https://formspree.io/f/xayglawa">
           <label className='block text-xl'  htmlFor="txt">Enter Your Name</label>
           <input name="Name" type="text" id="txt" className="px-10 py-1 rounded-md text-black" placeholder="Name" />
 
@@ -19,23 +17,9 @@ const page = () => {
           <textarea id="txtx" name="Message" cols="30" rows="10" placeholder="Enter your Message here" className="rounded-md text-black px-3"></textarea>
 
 
-        <button type="submit" className="block justify-center bg-white text-black px-1 rounded font-bold"> Submit</button>
+        <button type="submit" className="block justify-center bg-white text-black border-2 px-4 py-1 rounded font-bold"> Submit</button>
         </form>
-      </div>
-
-      <h1 className="Headingz text-white flex justify-center text-3xl">
-        Chillll Zoneeee!
-      </h1>
-      <div className="music flex justify-center mt-10" >
-        <iframe
-        //   style="border-radius:12px"
-          src="https://open.spotify.com/embed/playlist/0CFuMybe6s77w6QQrJjW7d?utm_source=generator"
-          width="70%"
-          height="352"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        />
-      </div>
+   </div>
     </>
   );
 };

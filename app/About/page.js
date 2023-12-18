@@ -10,7 +10,7 @@ const copyEmail = () => {
 const page = () => {
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 m-5 ">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 m-5 font-semibold ">
         <div className="border p-4 rounded-2xl h-full">
           <div className="skills text-black font-bold text-xl ">
             <p>About</p>
@@ -51,16 +51,27 @@ const page = () => {
               TAILWIND
             </p>
           </div>
-          <p className="text-sm from-neutral-400 flex items-center justify-start mt-16">
-          Note: All these technologies are self-taught🚀
+          
+          <div className="projects flex justify-evenly items-center mt-16">
+          <p className="text-sm from-neutral-400">
+            Note: All these technologies are self-taught🚀
           </p>
+          <Link
+            href="https://www.linkedin.com/in/jenish-khemnani-b2ab31233/"
+            target="_blank"
+          >
+            <button className="border font-bold py-2 px-4 rounded-md flex items-center gap-3 text-white hover:text-black bg-black hover:bg-white">
+              PROJECTS <MdOutlineArrowOutward />
+            </button>
+          </Link>
+          </div>
         </div>
 
         <div className="border p-4 rounded-2xl">
           <div className="email flex justify-between items-center">
             <p className="text-xl font-bold">Email</p>
             <div className="statusOfWork flex items-center justify-end gap-1">
-              <p className="h-3 w-3 rounded-lg bg-green-500 "></p>
+              <p className="h-3 w-3 rounded-lg bg-green-500 transition duration-300 ease-in-out hover:bg-green-700 "></p>
               <p className="text-md font-semibold">Available for work</p>
             </div>
           </div>
@@ -70,22 +81,25 @@ const page = () => {
           <div className="emailbtn mt-5 flex gap-3">
             <button
               onClick={copyEmail}
-              className="border font-bold py-2 px-4 rounded-md flex items-center gap-3 text-black hover:text-white bg-transparent hover:bg-black"
+              className="border font-bold py-2 px-4 rounded-md flex items-center gap-3 text-black hover:text-white bg-transparent hover:bg-black transition duration-300 ease-in-out sm:text-xs text-base"
             >
               Copy Email <BsCopy />
             </button>
 
-            <Link href="https://www.linkedin.com/in/jenish-khemnani-b2ab31233/">
-              <button className="border font-bold py-2 px-4 rounded-md flex items-center gap-3 text-white hover:text-black bg-black hover:bg-white">
+            <Link
+              href="https://www.linkedin.com/in/jenish-khemnani-b2ab31233/"
+              target="_blank"
+            >
+              <button className="border font-bold py-2 px-4 rounded-md flex items-center gap-3 text-white hover:text-black bg-black hover:bg-white transition duration-300 ease-in-out">
                 GET IN TOUCH <MdOutlineArrowOutward />
               </button>
             </Link>
           </div>
         </div>
         <div className="border p-4 rounded-2xl">
-          <div className="social flex items-center justify-center gap-3">
-            <p className="font-bold text-2xl">Let's connect </p>
-            <p className="text-base font-semibold">on Social Media</p>
+          <div className="social flex items-center justify-evenly gap-3">
+            <p className="font-bold sm:text-2xl text-base">Let's connect on Social Media</p>
+            <p className="text-2xl font-semibold"></p>
             <div className="image">
               <Image
                 alt="Profile Image"
@@ -96,11 +110,15 @@ const page = () => {
               />
             </div>
             <div className="social flex justify-center items-center">
-            <Link href="https:jimmyyy.bio.link/">
-              <button className="border font-bold py-2 px-4 sm:rounded-md rounded-md flex items-center gap-3 text-white hover:text-black bg-black hover:bg-white ">
-                LET'S TALK<MdOutlineArrowOutward />
-              </button>
-            </Link>
+              <Link
+                href="https://www.instagram.com/jimmmyyy_23/"
+                target="_blank"
+              >
+                <button className="border font-bold py-2 px-4 sm:rounded-md rounded-md flex items-center gap-3 text-white hover:text-black bg-black hover:bg-white transition duration-300 ease-in-out">
+                  LET'S TALK
+                  <MdOutlineArrowOutward className="hidden sm:inline" />
+                </button>
+              </Link>
             </div>
           </div>
         </div>

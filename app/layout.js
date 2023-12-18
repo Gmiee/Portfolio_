@@ -1,6 +1,8 @@
 import './globals.css'
 import { Poppins } from 'next/font/google'
 import { ChakraProvider } from '@chakra-ui/react';
+import Header from '@/Components/Header';
+
 const inter = Poppins({ subsets: ['latin'],  weight : '300'})
 export const metadata = {
   title: "Jenish Khemnani's Portfolio!  ",
@@ -12,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body suppressHydrationWarning className={inter.className}>
         <ChakraProvider>
-          
+        <Header/>
         {children}
         </ChakraProvider>        
         </body>
