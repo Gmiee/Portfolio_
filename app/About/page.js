@@ -12,7 +12,10 @@ const page = () => {
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 m-5 ">
         <div className="border p-4 rounded-2xl h-full">
-          <p className=" ">Heyy,</p>
+          <div className="skills text-black font-bold text-xl ">
+            <p>About</p>
+          </div>
+          <p className="mt-4">Heyy👋🏻,</p>
           <h1 className="text-3xl font-bold ">I'm Jenish</h1>
           <p className="text-2xl font-normal ">No super bio,</p>
           <p className="text-2xl ">Excited to learn new technologies!</p>
@@ -49,21 +52,20 @@ const page = () => {
             </p>
           </div>
           <p className="text-sm from-neutral-400 flex items-center justify-start mt-16">
-            Note: All these technologies are self learned.😊
+          Note: All these technologies are self-taught🚀
           </p>
         </div>
 
         <div className="border p-4 rounded-2xl">
           <div className="email flex justify-between items-center">
             <p className="text-xl font-bold">Email</p>
-            <div className="statusOfWork flex items-center justify-end gap-2">
+            <div className="statusOfWork flex items-center justify-end gap-1">
               <p className="h-3 w-3 rounded-lg bg-green-500 "></p>
               <p className="text-md font-semibold">Available for work</p>
             </div>
           </div>
           <div className="email01 mt-7 flex items-center justify-start ">
             <p className="font-bold text-lg">jimmykhemnani23@gmail.com</p>
-            
           </div>
           <div className="emailbtn mt-5 flex gap-3">
             <button
@@ -81,17 +83,24 @@ const page = () => {
           </div>
         </div>
         <div className="border p-4 rounded-2xl">
-          <div className="social flex flex-col justify-right">
+          <div className="social flex items-center justify-center gap-3">
             <p className="font-bold text-2xl">Let's connect </p>
             <p className="text-base font-semibold">on Social Media</p>
             <div className="image">
-            <Image
-              alt="Profile Image"
-              className="object-cover flex flex-wrap"
-              src={"/ava.png"}
-              height={100}
-              width={100}
-            />
+              <Image
+                alt="Profile Image"
+                className="object-cover flex flex-wrap"
+                src={"/ava.png"}
+                height={100}
+                width={100}
+              />
+            </div>
+            <div className="social flex justify-center items-center">
+            <Link href="https:jimmyyy.bio.link/">
+              <button className="border font-bold py-2 px-4 sm:rounded-md rounded-md flex items-center gap-3 text-white hover:text-black bg-black hover:bg-white ">
+                LET'S TALK<MdOutlineArrowOutward />
+              </button>
+            </Link>
             </div>
           </div>
         </div>

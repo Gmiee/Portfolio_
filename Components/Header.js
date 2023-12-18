@@ -1,6 +1,7 @@
 'use client'
 import { useRef } from 'react';
 import Link from 'next/link';
+import { VStack } from '@chakra-ui/react';
 import { IoMenu } from "react-icons/io5";
 import {
   Drawer,
@@ -35,8 +36,12 @@ const Header = () => {
             J E N I S H
           </DrawerHeader>
 
-          <DrawerBody p="4" m="auto">
-            <Link href="/Contact">Contact</Link>
+          <DrawerBody p="4"  m="auto">
+            <VStack>
+            <Link className='text-xl' href="/">Home</Link>
+            <Link className='text-xl' href="/Contact">Contact</Link>
+            <Link className='text-xl' href="/Projectss">Projects</Link>
+            </VStack>
           </DrawerBody>
         </DrawerContent>
       </Drawer>
