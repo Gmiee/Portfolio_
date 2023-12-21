@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { BsCopy } from "react-icons/bs";
 import { MdOutlineArrowOutward } from "react-icons/md";
