@@ -6,14 +6,12 @@ import { IoMail } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
 import { BsFillPinAngleFill } from "react-icons/bs";
 import { RiInstagramFill } from "react-icons/ri";
-const copyEmail = () => {
-  navigator.clipboard.writeText("jimmykhemnani23@gmail.com");
-};
+
 
 const BentoLayout = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 p-5 font-semibold h-screen bg-surface">
-      <div className="border p-4 rounded-2xl h-[369px] bg-white ">
+      <div className="border p-4 rounded-2xl h-[369px] bg-white flex justify-around flex-col">
         <div className="img flex justify-center items-center h-[70%] flex-col">
           <div className="bg h-auto w-fit bg-bp flex  rounded-full p-0">
             <Image className="" src="/hey.png" width={120} height={120} />
@@ -21,16 +19,18 @@ const BentoLayout = () => {
           <p className="text-3xl text-bp font-bold">Khemnani Jenish</p>
           <p className="uppercase text-xl text-gray8">React js Dev</p>
         </div>
-        <div className="statusOfWork flex items-center justify-center mt-0 gap-1 bg-green-100 px-5 py-3 w-fit m-auto rounded-full">
+        <div className="statusOfWork flex items-center justify-center mt-0 gap-3 bg-green-100 px-5 py-3 w-fit m-auto rounded-full">
           <p className="h-3 w-3 rounded-lg bg-avail transition duration-300 ease-in-out "></p>
+          <a href="mailto:gmieee23@gmail.com">
           <p className="text-md font-semibold text-avail">
             Looking For Opportunity
           </p>
+          </a>
         </div>
       </div>
 
       {/* Compartment 2 */}
-      <div className="border p-4 rounded-2xl h-[369px] bg-white">
+      <div className="border p-4 rounded-2xl h-[369px] bg-white flex justify-between flex-col">
         <div className="skills text-gray8 font-bold text-3xl">
           <p>Skills</p>
         </div>
@@ -65,11 +65,11 @@ const BentoLayout = () => {
       </div>
 
       {/* Compartment 3 */}
-      <div className="border p-3 rounded-2xl h-[369px] bg-white">
+      <div className="border p-3 rounded-2xl h-[369px] bg-white flex justify-around flex-col">
         <div className="skills text-gray8 font-bold text-3xl mb-5">
           <p>Quick Links</p>
         </div>
-        <div className="links flex flex-wrap justify-center gap-5 flex-col mx-3 px-1">
+        <div className="links flex flex-wrap justify-center gap-5 flex-col mx-3 px-1 text-md">
           <div>
             <a href="https://jimmyyy.bio.link/">
               <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl ">
