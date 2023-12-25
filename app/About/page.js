@@ -116,7 +116,7 @@ const BentoLayout = () => {
       <div className="border p-4 rounded-2xl col-span-1 max-sm:col-span-1 bg-white">
         <div className="main my-1 flex flex-col items-center justify-evenly h-full">
           <p className="text-center text-gray8">
-            Passionate Student and Developer
+            Passionate Student and Developer,
           </p>
           <p className="text-center text-bp">
             On a road to become a MERN STACK Dev!
