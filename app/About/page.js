@@ -34,7 +34,7 @@ const BentoLayout = () => {
         <div className="skills text-gray8 font-bold text-3xl">
           <p>Skills</p>
         </div>
-        <div className="technologies flex flex-wrap justify-center mt-4 gap-3">
+        <div className="technologies flex flex-wrap justify-center mt-4 gap-3 uppercase">
           {/* Skills content */}
           <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
             HTML&CSS
@@ -43,10 +43,13 @@ const BentoLayout = () => {
             JAVASCRIPT
           </p>
           <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-            REACT .JS
+            Node js
           </p>
           <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-            NEXT .JS
+            REACT JS
+          </p>
+          <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+            NEXT JS
           </p>
           <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
             TAILWIND
@@ -66,7 +69,7 @@ const BentoLayout = () => {
 
       {/* Compartment 3 */}
       <div className="border p-3 rounded-2xl h-[369px] bg-white flex justify-around flex-col">
-        <div className="skills text-gray8 font-bold text-3xl mb-5">
+        <div className="skills text-gray8 font-bold text-3xl mb-0">
           <p>Quick Links</p>
         </div>
         <div className="links flex flex-wrap justify-center gap-5 flex-col mx-3 px-1 text-md">
@@ -118,7 +121,7 @@ const BentoLayout = () => {
           <p className="text-center text-bp">
             On a road to become a MERN STACK Dev!
           </p>
-          <p className="text-center text-gray8">Excited to learn new things</p>
+          <p className="text-center text-gray8">Excited to learn new things.</p>
         </div>
       </div>
 
