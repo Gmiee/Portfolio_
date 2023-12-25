@@ -125,9 +125,11 @@ const BentoLayout = () => {
         </div>
       </div>
 
-      {/* <div className="border p-4 rounded-2xl bg-white">
-        
-      </div> */}
+      <div className="border rounded-2xl bg-white">
+        <div className="spotify">
+        <iframe style={{borderRadius:'12px'}} src="https://open.spotify.com/embed/artist/203J4D1ULDOphC8VgLC3Iy?utm_source=generator&theme=0" width="100%" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
     </div>
   );
 };
