@@ -6,21 +6,18 @@ import { IoMail } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
 import { BsFillPinAngleFill } from "react-icons/bs";
 import { RiInstagramFill } from "react-icons/ri";
-import { toast, Toaster } from "react-hot-toast";
+import { Toaster, toast } from 'sonner'
 
-const showToast = () => {
-  toast("Hey There!", {
-    icon: "👋",
-  });
-};
-showToast()
+const showToast = ()=>{
+  toast('Heyy There!')
+}
+
+showToast();
 const BentoLayout = () => {
-  useEffect(() => {
-    // showToast();
-  }, []);
+  
   return (
     <>
-      <Toaster position="top-center" reverseOrder={false} />
+      <Toaster position="top-center" closeButton />
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 p-5 font-semibold h-full bg-surface">
         {/* <div>
       </div> */}
