@@ -6,21 +6,31 @@ import { IoMail } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
 import { BsFillPinAngleFill } from "react-icons/bs";
 import { RiInstagramFill } from "react-icons/ri";
-import { Toaster, toast } from 'sonner'
+// import { Toaster, toast } from 'sonner'
+import { Toaster, toast } from "react-hot-toast";
 
 const showToast = ()=>{
-  toast('Heyy There!')
-}
+  toast('Hey There!👋', {
+    style: {
+      border: '1px solid #f6f6f7',
+      padding: '5px',
+    },
+    duration:'',
+  });
+  // useEffect(() => {
+    
+    
+    // }, [])
+  }
+  showToast()
 
-showToast();
 const BentoLayout = () => {
+  
   
   return (
     <>
-      <Toaster position="top-center" closeButton />
+      <Toaster position="top-center" closeButton/>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 p-5 font-semibold h-full bg-surface">
-        {/* <div>
-      </div> */}
         <div className="border p-4 rounded-2xl h-max bg-white flex justify-around flex-col">
           <div className="img flex justify-center items-center h-[70%] flex-col">
             <div className="bg h-auto w-fit bg-bp flex  rounded-full p-0">
@@ -103,7 +113,7 @@ const BentoLayout = () => {
 
         {/* Compartment 3 */}
         <div className="border p-3 rounded-2xl h-auto bg-white flex justify-around flex-col">
-          <div className="skills text-gray8 font-bold text-3xl mb-0">
+          <div className="skills text-gray8 font-bold text-3xl mb-0 pb-3">
             <p>Quick Links</p>
           </div>
           <div className="links flex flex-wrap justify-center gap-5 flex-col mx-3 px-1 text-md">
@@ -217,7 +227,7 @@ const BentoLayout = () => {
           </div>
         </div>
 
-        <div className="border rounded-2xl bg-white col-span-3 max-sm:col-span-1 max-md:col-span-1 max-lg:col-span-1">
+        <div className="border rounded-2xl h-fit bg-white col-span-3 max-sm:col-span-1 max-md:col-span-1 max-lg:col-span-1">
           <div className="spotify">
             <iframe
               style={{ borderRadius: "12px" }}
