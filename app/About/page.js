@@ -1,35 +1,56 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
 import { BsFillPinAngleFill } from "react-icons/bs";
 import { RiInstagramFill } from "react-icons/ri";
+import { toast, Toaster } from "react-hot-toast";
 
+const showToast = () => {
+  toast("Hey There!", {
+    icon: "👋",
+  });
+};
+showToast()
 const BentoLayout = () => {
+  useEffect(() => {
+    // showToast();
+  }, []);
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 p-5 font-semibold h-full bg-surface">
-      <div className="border p-4 rounded-2xl h-max bg-white flex justify-around flex-col">
-        <div className="img flex justify-center items-center h-[70%] flex-col">
-          <div className="bg h-auto w-fit bg-bp flex  rounded-full p-0">
-            <Image className="" src="/hey.png" width={120} height={120} alt="avatar" priority={false} />
+    <>
+      <Toaster position="top-center" reverseOrder={false} />
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 p-5 font-semibold h-full bg-surface">
+        {/* <div>
+      </div> */}
+        <div className="border p-4 rounded-2xl h-max bg-white flex justify-around flex-col">
+          <div className="img flex justify-center items-center h-[70%] flex-col">
+            <div className="bg h-auto w-fit bg-bp flex  rounded-full p-0">
+              <Image
+                className=""
+                src="/hey.png"
+                width={120}
+                height={120}
+                alt="avatar"
+                priority={false}
+              />
+            </div>
+            <p className="text-3xl text-bp font-bold">Khemnani Jenish</p>
+            <p className="uppercase text-xl text-gray8">React js Dev</p>
           </div>
-          <p className="text-3xl text-bp font-bold">Khemnani Jenish</p>
-          <p className="uppercase text-xl text-gray8">React js Dev</p>
+          <div className="statusOfWork flex items-center justify-center mt-0 gap-3 bg-green-100 px-5 py-2 w-fit m-auto rounded-full">
+            <p className="h-3 w-3 rounded-lg bg-avail transition duration-300 ease-in-out "></p>
+            <a href="mailto:gmieee23@gmail.com">
+              <p className="text-md font-semibold text-avail">
+                Looking For Opportunity
+              </p>
+            </a>
+          </div>
         </div>
-        <div className="statusOfWork flex items-center justify-center mt-0 gap-3 bg-green-100 px-5 py-2 w-fit m-auto rounded-full">
-          <p className="h-3 w-3 rounded-lg bg-avail transition duration-300 ease-in-out "></p>
-          <a href="mailto:gmieee23@gmail.com">
-            <p className="text-md font-semibold text-avail">
-              Looking For Opportunity
-            </p>
-          </a>
-        </div>
-      </div>
 
-      {/* Compartment 2 */}
-      {/* <div className="border p-4 rounded-2xl h-[369px] bg-white flex justify-between flex-col">
+        {/* Compartment 2 */}
+        {/* <div className="border p-4 rounded-2xl h-[369px] bg-white flex justify-between flex-col">
         <div className="skills text-gray8 font-bold text-3xl">
           <p>Skills</p>
         </div>
@@ -66,143 +87,153 @@ const BentoLayout = () => {
         </div>
       </div> */}
 
-      <div className="border p-4 rounded-2xl h-auto max-sm:h-fit max-lg:h-fit col-span-2 max-sm:col-span-1 bg-white">
-      <div className="skills text-gray8 font-bold text-3xl">
-          <p>Goals</p>
+        <div className="border p-4 rounded-2xl h-auto max-sm:h-fit max-lg:h-fit col-span-2 max-sm:col-span-1 bg-white">
+          <div className="skills text-gray8 font-bold text-3xl">
+            <p>Goals</p>
+          </div>
+          <div className="main flex flex-col items-center justify-evenly h-full">
+            <p className="text-center text-gray8">
+              Passionate Student and Developer,
+            </p>
+            <p className="text-center text-bp">
+              On a road to become a MERN STACK Dev!
+            </p>
+            <p className="text-center text-gray8">
+              Excited to learn new things.
+            </p>
+          </div>
         </div>
-        <div className="main flex flex-col items-center justify-evenly h-full">
-          <p className="text-center text-gray8">
-            Passionate Student and Developer,
-          </p>
-          <p className="text-center text-bp">
-            On a road to become a MERN STACK Dev!
-          </p>
-          <p className="text-center text-gray8">Excited to learn new things.</p>
-        </div>
-      </div>
 
-      {/* Compartment 3 */}
-      <div className="border p-3 rounded-2xl h-auto bg-white flex justify-around flex-col">
-        <div className="skills text-gray8 font-bold text-3xl mb-0">
-          <p>Quick Links</p>
-        </div>
-        <div className="links flex flex-wrap justify-center gap-5 flex-col mx-3 px-1 text-md">
-          <div>
-            <a href="https://jimmyyy.bio.link/">
-              <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl ">
-                <BsFillPinAngleFill /> Projects
-              </p>
-            </a>
+        {/* Compartment 3 */}
+        <div className="border p-3 rounded-2xl h-auto bg-white flex justify-around flex-col">
+          <div className="skills text-gray8 font-bold text-3xl mb-0">
+            <p>Quick Links</p>
           </div>
-          <div>
-            <a href="mailto:gmieee23@gmail.com">
-              <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl">
-                <IoMail /> Mail
-              </p>
-            </a>
-          </div>
-
-          <div>
-            <a href="https://github.com/Gmiee" target="_blank">
-              <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl">
-                <FaGithub /> Github
-              </p>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://www.linkedin.com/in/jenish-khemnani-b2ab31233/"
-              target="_blank"
-            >
-              <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl">
-                <FaLinkedin /> LinkedIn
-              </p>
-            </a>
-          </div>
-          <div>
-            <a href="https://instagram.com/jimmmyyy_23" target="_blank">
-              <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl">
-                <RiInstagramFill /> Instagram
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      {/* Compartment 4 */}
-      <div className="border p-4 rounded-2xl h-auto col-span-2 max-sm:col-span-1 bg-white flex justify-between flex-col">
-        <div className="skills text-gray8 font-bold text-3xl pb-2">
-          <p>Skills</p>
-        </div>
-        <div>
-          <p>Technologies:</p>
-
-          <div className="technologies flex flex-wrap justify-center mt-4 gap-3 uppercase">
-            {/* Skills content */}
-            <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-              HTML&CSS
-            </p>
-            <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-              TAILWIND
-            </p>
-            <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-              BOOTSTRAP
-            </p>
-            <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-              chakra ui
-            </p>
-            <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-              REACT JS
-            </p>
-            <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-              NEXT JS
-            </p>
-            <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-              GITHUB
-            </p>
-          </div>
-          <div className="programming my-1 ">
-            <p className="">Programming:</p>
-            <div className="flex flex-wrap justify-center mt-4 gap-3 uppercase">
-              <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-                JAVASCRIPT
-              </p>
+          <div className="links flex flex-wrap justify-center gap-5 flex-col mx-3 px-1 text-md">
+            <div>
+              <a href="https://jimmyyy.bio.link/">
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl ">
+                  <BsFillPinAngleFill /> Projects
+                </p>
+              </a>
             </div>
-          </div>
-          <div className="certificate my-1 ">
-            <p>Certification:</p>
-            <div className="flex flex-wrap justify-center mt-4 gap-3 ">
-              
-               <a href="https://www.freecodecamp.org/certification/fcc2d3a035f-5353-49b6-867d-8f3d03bbc619/responsive-web-design" target="_blank"><p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">Responsive-web-design from Free Code Camp </p></a> 
-              
-              
-               <a href="https://www.hackerrank.com/certificates/c13919c7f36b"><p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">CSS certificate from Hacker Rank
-              </p>
-               </a> 
+            <div>
+              <a href="mailto:gmieee23@gmail.com">
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl">
+                  <IoMail /> Mail
+                </p>
+              </a>
+            </div>
+
+            <div>
+              <a href="https://github.com/Gmiee" target="_blank">
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl">
+                  <FaGithub /> Github
+                </p>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.linkedin.com/in/jenish-khemnani-b2ab31233/"
+                target="_blank"
+              >
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl">
+                  <FaLinkedin /> LinkedIn
+                </p>
+              </a>
+            </div>
+            <div>
+              <a href="https://instagram.com/jimmmyyy_23" target="_blank">
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl">
+                  <RiInstagramFill /> Instagram
+                </p>
+              </a>
             </div>
           </div>
         </div>
-        <div className="projects flex justify-evenly items-center my-2">
-          {/* Projects section */}
-          <p className=" text-gray5 text-md">
-            Note: All of these are self-taught.🚀
-          </p>
-        </div>
-      </div>
 
-      <div className="border rounded-2xl bg-white col-span-3 max-sm:col-span-1 max-md:col-span-1 max-lg:col-span-1">
-        <div className="spotify">
-          <iframe
-            style={{ borderRadius: "12px" }}
-            src="https://open.spotify.com/embed/artist/203J4D1ULDOphC8VgLC3Iy?utm_source=generator&theme=0"
-            width="100%"
-            height="352"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-          ></iframe>
+        {/* Compartment 4 */}
+        <div className="border p-4 rounded-2xl h-auto col-span-2 max-sm:col-span-1 bg-white flex justify-between flex-col">
+          <div className="skills text-gray8 font-bold text-3xl pb-2">
+            <p>Skills</p>
+          </div>
+          <div>
+            <p>Technologies:</p>
+
+            <div className="technologies flex flex-wrap justify-center mt-4 gap-3 uppercase">
+              {/* Skills content */}
+              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+                HTML&CSS
+              </p>
+              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+                TAILWIND
+              </p>
+              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+                BOOTSTRAP
+              </p>
+              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+                chakra ui
+              </p>
+              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+                REACT JS
+              </p>
+              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+                NEXT JS
+              </p>
+              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+                GITHUB
+              </p>
+            </div>
+            <div className="programming my-1 ">
+              <p className="">Programming:</p>
+              <div className="flex flex-wrap justify-center mt-4 gap-3 uppercase">
+                <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+                  JAVASCRIPT
+                </p>
+              </div>
+            </div>
+            <div className="certificate my-1 ">
+              <p>Certification:</p>
+              <div className="flex flex-wrap justify-center mt-4 gap-3 ">
+                <a
+                  href="https://www.freecodecamp.org/certification/fcc2d3a035f-5353-49b6-867d-8f3d03bbc619/responsive-web-design"
+                  target="_blank"
+                >
+                  <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+                    Responsive-web-design from Free Code Camp{" "}
+                  </p>
+                </a>
+
+                <a href="https://www.hackerrank.com/certificates/c13919c7f36b">
+                  <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+                    CSS certificate from Hacker Rank
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="projects flex justify-evenly items-center my-2">
+            {/* Projects section */}
+            <p className=" text-gray5 text-md">
+              Note: All of these are self-taught.🚀
+            </p>
+          </div>
+        </div>
+
+        <div className="border rounded-2xl bg-white col-span-3 max-sm:col-span-1 max-md:col-span-1 max-lg:col-span-1">
+          <div className="spotify">
+            <iframe
+              style={{ borderRadius: "12px" }}
+              src="https://open.spotify.com/embed/artist/203J4D1ULDOphC8VgLC3Iy?utm_source=generator&theme=0"
+              width="100%"
+              height="352"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
