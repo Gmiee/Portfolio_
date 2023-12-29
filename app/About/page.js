@@ -28,7 +28,7 @@ const BentoLayout = () => {
   
   return (
     <>
-            <Toaster position="top-center" closeButton/>
+            <Toaster position="top-right" closeButton/>
 
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 p-5 font-semibold h-full bg-surface">
         <div className="border p-4 rounded-2xl h-max bg-white flex justify-around flex-col">
