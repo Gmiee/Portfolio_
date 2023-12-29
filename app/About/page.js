@@ -9,31 +9,28 @@ import { RiInstagramFill } from "react-icons/ri";
 // import { Toaster, toast } from 'sonner'
 import { Toaster, toast } from "react-hot-toast";
 
-const showToast = ()=>{
-  toast('Hey There!👋', {
+const showToast = () => {
+  toast("Hey There!👋", {
     style: {
-      border: '1px solid #f6f6f7',
-      padding: '5px',
+      border: "1px solid #f6f6f7",
+      padding: "5px",
     },
   });
-}
-
+};
 
 const BentoLayout = () => {
   useEffect(() => {
-    
-    showToast()
-    }, [])
-  
-  
+    showToast();
+  }, []);
+
   return (
     <>
-            <Toaster position="top-right" closeButton/>
+      <Toaster position="top-right" closeButton />
 
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 p-5 font-semibold h-full bg-surface">
-        <div className="border p-4 rounded-2xl h-max bg-white flex justify-around flex-col">
+        <div className="border p-4 rounded-2xl h-max bg-white flex justify-around flex-col col-span-2 max-sm:col-span-1">
           <div className="img flex justify-center items-center h-[70%] flex-col">
-            <div className="bg h-auto w-fit bg-bp flex  rounded-full p-0">
+            <div className="bg h-auto w-fit bg-bp flex rounded-full p-0">
               <Image
                 className=""
                 src="/hey.png"
@@ -44,14 +41,12 @@ const BentoLayout = () => {
               />
             </div>
             <p className="text-3xl text-bp font-bold">Khemnani Jenish</p>
-            <p className="uppercase text-xl text-gray8">React js Dev</p>
+            <p className="uppercase text-xl text-gray8">web dev</p>
           </div>
           <div className="statusOfWork flex items-center justify-center mt-0 gap-3 bg-green-100 px-5 py-2 w-fit m-auto rounded-full">
             <p className="h-3 w-3 rounded-lg bg-avail transition duration-300 ease-in-out "></p>
             <a href="mailto:gmieee23@gmail.com">
-              <p className="text-md font-semibold text-avail">
-                Looking For Opportunity
-              </p>
+              <p className="text-md font-semibold text-avail">Available</p>
             </a>
           </div>
         </div>
@@ -94,16 +89,16 @@ const BentoLayout = () => {
         </div>
       </div> */}
 
-        <div className="border p-4 rounded-2xl h-auto max-sm:h-fit max-lg:h-fit col-span-2 max-sm:col-span-1 bg-white">
+        <div className="border p-4 rounded-2xl h-auto max-sm:h-fit max-lg:h-full col-span-1 max-sm:col-span-1 bg-white">
           <div className="skills text-gray8 font-bold text-3xl">
             <p>Goals</p>
           </div>
-          <div className="main flex flex-col items-center justify-evenly h-full">
+          <div className="main flex flex-col items-center justify-evenly h-full max-md:text-base max-sm:text-sm">
             <p className="text-center text-gray8">
               Passionate Student and Developer,
             </p>
             <p className="text-center text-bp">
-              On a road to become a MERN STACK Dev!
+              On a road to become MERN STACK Dev!
             </p>
             <p className="text-center text-gray8">
               Excited to learn new things.
@@ -118,15 +113,15 @@ const BentoLayout = () => {
           </div>
           <div className="links flex flex-wrap justify-center gap-5 flex-col mx-3 px-1 text-md">
             <div>
-              <a href="https://jimmyyy.bio.link/">
-                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl ">
+              <a href="https://jimmyyy.bio.link/" target="_blank">
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
                   <BsFillPinAngleFill /> Projects
                 </p>
               </a>
             </div>
             <div>
               <a href="mailto:gmieee23@gmail.com">
-                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl">
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
                   <IoMail /> Mail
                 </p>
               </a>
@@ -134,7 +129,7 @@ const BentoLayout = () => {
 
             <div>
               <a href="https://github.com/Gmiee" target="_blank">
-                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl">
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
                   <FaGithub /> Github
                 </p>
               </a>
@@ -144,14 +139,14 @@ const BentoLayout = () => {
                 href="https://www.linkedin.com/in/jenish-khemnani-b2ab31233/"
                 target="_blank"
               >
-                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl">
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
                   <FaLinkedin /> LinkedIn
                 </p>
               </a>
             </div>
             <div>
               <a href="https://instagram.com/jimmmyyy_23" target="_blank">
-                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl">
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
                   <RiInstagramFill /> Instagram
                 </p>
               </a>
@@ -227,7 +222,7 @@ const BentoLayout = () => {
           </div>
         </div>
 
-        <div className="border rounded-2xl h-fit bg-white col-span-3 max-sm:col-span-1 max-md:col-span-1 max-lg:col-span-1">
+        {/* <div className="border rounded-2xl h-fit bg-white col-span-3 max-sm:col-span-1 max-md:col-span-1 max-lg:col-span-1">
           <div className="spotify">
             <iframe
               style={{ borderRadius: "12px" }}
@@ -238,7 +233,20 @@ const BentoLayout = () => {
               loading="lazy"
             ></iframe>
           </div>
-        </div>
+        </div> */}
+      </div>
+      <div className="credits flex justify-center items-center bg-surface font-bold">
+        <p>
+          UI by{" "}
+          <a
+            className="pb-3 underline"
+            href="https://vikasassudani.in/"
+            target="_blank"
+          >
+            Vikas Assudani
+          </a>
+          
+        </p>
       </div>
     </>
   );
