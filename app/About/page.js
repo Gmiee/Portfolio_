@@ -235,11 +235,11 @@ const BentoLayout = () => {
           </div>
         </div> */}
       </div>
-      <div className="credits flex justify-center items-center bg-surface font-bold">
+      <div className="credits flex justify-center items-center bg-surface font-bold pb-3">
         <p>
           UI by{" "}
           <a
-            className="pb-3 underline"
+            className="underline"
             href="https://vikasassudani.in/"
             target="_blank"
           >
