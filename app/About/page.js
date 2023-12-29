@@ -15,16 +15,15 @@ const showToast = ()=>{
       border: '1px solid #f6f6f7',
       padding: '5px',
     },
-    duration:'3000',
   });
-  // useEffect(() => {
-    
-    
-    // }, [])
-  }
-  showToast()
+}
+
 
 const BentoLayout = () => {
+  useEffect(() => {
+    
+    showToast()
+    }, [])
   
   
   return (
