@@ -40,13 +40,13 @@ const BentoLayout = () => {
                 priority={false}
               />
             </div>
-            <p className="text-3xl text-bp font-bold">Khemnani Jenish</p>
+            <p className="text-3xl text-bp font-bold">Jenish Khemnani</p>
             <p className="uppercase text-xl text-gray8">web dev</p>
           </div>
-          <div className="statusOfWork flex items-center justify-center mt-0 gap-3 bg-green-100 px-5 py-2 w-fit m-auto rounded-full">
-            <p className="h-3 w-3 rounded-lg bg-avail transition duration-300 ease-in-out "></p>
+          <div className="statusOfWork flex items-center justify-center mt-0 gap-3 bg-green-100 hover:bg-avail px-5 py-2 w-fit m-auto rounded-full">
+            <p className="h-3 w-3 rounded-lg bg-avail hover:none transition duration-300 ease-in-out "></p>
             <a href="mailto:gmieee23@gmail.com">
-              <p className="text-md font-semibold text-avail">Available</p>
+              <p className="text-md font-semibold text-avail transition duration-300 ease-in hover:text-green-100 hover:-translate-x-3">Available</p>
             </a>
           </div>
         </div>
