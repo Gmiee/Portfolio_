@@ -4,6 +4,8 @@ import { ChakraProvider } from '@chakra-ui/react';
 // import Header from '@/Components/Header';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from '@vercel/analytics/react';
+// import { ThemeProvider } from 'next-themes';
+// import Provider from '@/Components/Provider';
 
 const inter = Rubik({ subsets: ['latin'],  weight : '300'})
 export const metadata = {
@@ -17,7 +19,9 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <ChakraProvider>
         {/* <Header/> */}
+        {/* <Provider> */}
         {children}
+        {/* </Provider> */}
         <SpeedInsights />
         <Analytics />
         </ChakraProvider>        

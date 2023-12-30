@@ -6,15 +6,16 @@ import { IoMail } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
 import { BsFillPinAngleFill } from "react-icons/bs";
 import { RiInstagramFill } from "react-icons/ri";
-// import { Toaster, toast } from 'sonner'
 import { Toaster, toast } from "react-hot-toast";
 
 const showToast = () => {
-  toast("Hey There!👋", {
+  toast("Hey There!", {
     style: {
       border: "1px solid #f6f6f7",
       padding: "5px",
     },
+    icon: '👋',
+    
   });
 };
 
@@ -30,7 +31,7 @@ const BentoLayout = () => {
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 p-5 font-semibold h-full bg-surface">
         <div className="border p-4 rounded-2xl h-max bg-white flex justify-around flex-col col-span-2 max-sm:col-span-1">
           <div className="img flex justify-center items-center h-[70%] flex-col">
-            <div className="bg h-auto w-fit bg-bp flex rounded-full p-0">
+            {/* <div className="bg h-auto w-fit bg-bp flex rounded-full p-0"> */}
               <Image
                 className=""
                 src="/hey.png"
@@ -39,14 +40,14 @@ const BentoLayout = () => {
                 alt="avatar"
                 priority={false}
               />
-            </div>
+            {/* </div> */}
             <p className="text-3xl text-bp font-bold">Jenish Khemnani</p>
             <p className="uppercase text-xl text-gray8">web dev</p>
           </div>
           <div className="statusOfWork flex items-center justify-center mt-0 gap-3 bg-green-100 hover:bg-avail px-5 py-2 w-fit m-auto rounded-full">
             <p className="h-3 w-3 rounded-lg bg-avail hover:none transition duration-300 ease-in-out "></p>
             <a href="mailto:gmieee23@gmail.com">
-              <p className="text-md font-semibold text-avail transition duration-300 ease-in hover:text-green-100 hover:-translate-x-3">Available</p>
+              <p className="text-md font-semibold text-avail transition duration-300 ease-in hover:text-white hover:-translate-x-3">Available</p>
             </a>
           </div>
         </div>
@@ -98,7 +99,7 @@ const BentoLayout = () => {
               Passionate Student and Developer,
             </p>
             <p className="text-center text-bp">
-              On a road to become MERN STACK Dev!
+              On a road to become WEB Dev!
             </p>
             <p className="text-center text-gray8">
               Excited to learn new things.
@@ -112,6 +113,13 @@ const BentoLayout = () => {
             <p>Quick Links</p>
           </div>
           <div className="links flex flex-wrap justify-center gap-5 flex-col mx-3 px-1 text-md">
+            <div>
+              <a href="https://github.com/Gmiee" target="_blank">
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
+                  <FaGithub /> Github
+                </p>
+              </a>
+            </div>
             <div>
               <a href="https://jimmyyy.bio.link/" target="_blank">
                 <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
@@ -127,13 +135,6 @@ const BentoLayout = () => {
               </a>
             </div>
 
-            <div>
-              <a href="https://github.com/Gmiee" target="_blank">
-                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
-                  <FaGithub /> Github
-                </p>
-              </a>
-            </div>
             <div>
               <a
                 href="https://www.linkedin.com/in/jenish-khemnani-b2ab31233/"
@@ -165,7 +166,7 @@ const BentoLayout = () => {
             <div className="technologies flex flex-wrap justify-center mt-4 gap-3 uppercase">
               {/* Skills content */}
               <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-                HTML&CSS
+                HTML & CSS
               </p>
               <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
                 TAILWIND
@@ -191,6 +192,9 @@ const BentoLayout = () => {
               <div className="flex flex-wrap justify-center mt-4 gap-3 uppercase">
                 <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
                   JAVASCRIPT
+                </p>
+                <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+                  PYTHON
                 </p>
               </div>
             </div>
