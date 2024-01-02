@@ -194,6 +194,9 @@ const BentoLayout = () => {
                MY SQL
               </p> */}
               <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+                GIT
+              </p>
+              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
                 GITHUB
               </p>
             </div>
