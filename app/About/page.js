@@ -184,6 +184,15 @@ const BentoLayout = () => {
               <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
                 NEXT JS
               </p>
+              {/* <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+               EXPRESS JS
+              </p>
+              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+               PHP
+              </p>
+              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+               MY SQL
+              </p> */}
               <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
                 GITHUB
               </p>
@@ -206,13 +215,13 @@ const BentoLayout = () => {
                   href="https://www.freecodecamp.org/certification/fcc2d3a035f-5353-49b6-867d-8f3d03bbc619/responsive-web-design"
                   target="_blank"
                 >
-                  <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+                  <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold capitalize">
                     Responsive-web-design from Free Code Camp{" "}
                   </p>
                 </a>
 
                 <a href="https://www.hackerrank.com/certificates/c13919c7f36b">
-                  <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+                  <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold capitalize">
                     CSS certificate from Hacker Rank
                   </p>
                 </a>
@@ -250,7 +259,7 @@ const BentoLayout = () => {
           >
             Vikas Assudani
           </a>
-          
+             👨‍💻
         </p>
       </div>
     </>
