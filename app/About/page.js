@@ -99,7 +99,7 @@ const BentoLayout = () => {
               Passionate Student and Developer,
             </p>
             <p className="text-center text-bp">
-              On a road to become WEB Dev!
+              On a road to become MERN Stack Dev!
             </p>
             <p className="text-center text-gray8">
               Excited to learn new things.
@@ -165,8 +165,9 @@ const BentoLayout = () => {
 
             <div className="technologies flex flex-wrap justify-center mt-4 gap-3 uppercase">
               {/* Skills content */}
-              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
                 HTML & CSS
+                
               </p>
               <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
                 TAILWIND
