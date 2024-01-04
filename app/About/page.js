@@ -120,11 +120,11 @@ const BentoLayout = () => {
               <a
                 href="https://github.com/Gmiee/Automated-msg-in-whatsapp"
                 target="_blank"
-                className="flex items-center gap-2"
+                className="flex items-center gap-2 "
               >
-                {" "}
+                
                 <FaGithub style={{ fontSize: "1rem" }} />
-                Py Automation:Sending Messages on WhatsApp Web <sup>New</sup>
+                Automating WhatsApp Web Messages with Python<sup>New</sup>
               </a>
             </p>
             <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
@@ -144,8 +144,8 @@ const BentoLayout = () => {
                 target="_blank"
                 className="flex items-center gap-2"
               >
-                <GoArrowUpRight style={{ fontSize: "1.2rem" }} />
                 ANNAPURNAA{" "}
+                <GoArrowUpRight style={{ fontSize: "1.2rem" }} />
               </a>
             </p>
             <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
@@ -154,8 +154,8 @@ const BentoLayout = () => {
                 target="_blank"
                 className="flex items-center gap-2 capitalize"
               >
-                <GoArrowUpRight style={{ fontSize: "1.2rem" }} />
                 Text-utility web app using React
+                <GoArrowUpRight style={{ fontSize: "1.2rem" }} />
               </a>
             </p>
           </div>
