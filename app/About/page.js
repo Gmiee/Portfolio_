@@ -5,7 +5,9 @@ import { FaGithub } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
 import { BsFillPinAngleFill } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
+import { GoArrowUpRight } from "react-icons/go";
 import { Toaster, toast } from "react-hot-toast";
 
 const showToast = () => {
@@ -14,8 +16,7 @@ const showToast = () => {
       border: "1px solid #f6f6f7",
       padding: "5px",
     },
-    icon: '👋',
-    
+    icon: "👋",
   });
 };
 
@@ -32,14 +33,14 @@ const BentoLayout = () => {
         <div className="border p-4 rounded-2xl h-max bg-white flex justify-around flex-col col-span-2 max-sm:col-span-1">
           <div className="img flex justify-center items-center h-[70%] flex-col">
             {/* <div className="bg h-auto w-fit bg-bp flex rounded-full p-0"> */}
-              <Image
-                className=""
-                src="/hey.png"
-                width={120}
-                height={120}
-                alt="avatar"
-                priority={false}
-              />
+            <Image
+              className=""
+              src="/hey.png"
+              width={120}
+              height={120}
+              alt="avatar"
+              priority={false}
+            />
             {/* </div> */}
             <p className="text-3xl text-bp font-bold">Jenish Khemnani</p>
             <p className="uppercase text-xl text-gray8">web dev</p>
@@ -47,7 +48,9 @@ const BentoLayout = () => {
           <div className="statusOfWork flex items-center justify-center mt-0 gap-3 bg-green-100 hover:bg-avail px-5 py-2 w-fit m-auto rounded-full">
             <p className="h-3 w-3 rounded-lg bg-avail hover:none transition duration-300 ease-in-out "></p>
             <a href="mailto:gmieee23@gmail.com">
-              <p className="text-md font-semibold text-avail transition duration-300 ease-in hover:text-white hover:-translate-x-3">Available</p>
+              <p className="text-md font-semibold text-avail transition duration-300 ease-in hover:text-white hover:-translate-x-3">
+                Available
+              </p>
             </a>
           </div>
         </div>
@@ -152,6 +155,16 @@ const BentoLayout = () => {
                 </p>
               </a>
             </div>
+            <div>
+              <a
+                href="https://x.com/Gmieee23?t=wEPgroCDMZYiEREo4nDq2Q&s=09"
+                target="_blank"
+              >
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
+                  <FaXTwitter /> Twitter
+                </p>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -167,7 +180,6 @@ const BentoLayout = () => {
               {/* Skills content */}
               <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
                 HTML & CSS
-                
               </p>
               <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
                 TAILWIND
@@ -239,18 +251,32 @@ const BentoLayout = () => {
           </div>
         </div>
 
-        {/* <div className="border rounded-2xl h-fit bg-white col-span-3 max-sm:col-span-1 max-md:col-span-1 max-lg:col-span-1">
-          <div className="spotify">
-            <iframe
-              style={{ borderRadius: "12px" }}
-              src="https://open.spotify.com/embed/artist/203J4D1ULDOphC8VgLC3Iy?utm_source=generator&theme=0"
-              width="100%"
-              height="352"
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-            ></iframe>
+        <div className="border rounded-2xl h-fit bg-white col-span-3 max-sm:col-span-1 max-md:col-span-1 max-lg:col-span-1">
+          <div className="latest text-gray8 font-bold text-3xl pb-2 p-4">
+            <p>Latest</p>
           </div>
-        </div> */}
+          <div className="recent p-5 flex flex-wrap gap-3 justify-center">
+            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+              <a
+                href="https://github.com/Gmiee/Automated-msg-in-whatsapp"
+                target="_blank" className="flex items-center gap-1"
+              >
+                {" "}
+                Python Automation: Sending Messages on WhatsApp Web
+                <FaGithub />
+              </a>
+            </p>
+            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
+              <a href="https://github.com/Gmiee/RollDice-game-with-python" target="_blank" className="flex items-center gap-1">
+               Roll the dice game using python <FaGithub />
+              </a>
+            </p>
+            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
+            
+              <a href="https://annapurnaa.in/" target="_blank" className="flex items-center gap-1">ANNAPURNAA<GoArrowUpRight /> </a>
+            </p>
+          </div>
+        </div>
       </div>
       <div className="credits flex justify-center items-center bg-surface font-bold pb-3">
         <p>
@@ -262,7 +288,7 @@ const BentoLayout = () => {
           >
             Vikas Assudani
           </a>
-             👨‍💻
+          👨‍💻
         </p>
       </div>
     </>
