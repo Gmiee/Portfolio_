@@ -94,7 +94,7 @@ const BentoLayout = () => {
       </div> */}
 
         <div className="border p-4 rounded-2xl h-auto max-sm:h-fit max-lg:h-fit col-span-1 max-sm:col-span-1 max-md:h-fit bg-white">
-          <div className="skills text-gray8 font-bold text-3xl">
+          <div className="skills text-gray8 font-bold text-xl ">
             <p>Goals</p>
           </div>
           <div className="main flex flex-col items-center justify-evenly h-full max-md:text-base max-sm:text-sm">
@@ -112,20 +112,10 @@ const BentoLayout = () => {
 
         {/* Compartment 3 */}
         <div className="border rounded-2xl h-fit bg-white col-span-3 max-sm:col-span-1 max-md:col-span-2 max-lg:col-span-2">
-          <div className="latest text-gray8 font-bold text-3xl pb-2 p-4">
+          <div className="latest text-gray8 font-bold text-xl pb-2 p-4">
             <p>Recent</p>
           </div>
           <div className="recent p-5 flex flex-wrap gap-3 justify-center">
-            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
-              <a
-                href="https://github.com/Gmiee/RollDice-game-with-python"
-                target="_blank"
-                className="flex items-center gap-2"
-              >
-                <FaGithub style={{ fontSize: "1rem" }} /> Roll the dice game
-                using python <sup>New</sup>
-              </a>
-            </p>
             <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
               <a
                 href="https://github.com/Gmiee/Automated-msg-in-whatsapp"
@@ -137,6 +127,17 @@ const BentoLayout = () => {
                 Py Automation:Sending Messages on WhatsApp Web <sup>New</sup>
               </a>
             </p>
+            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
+              <a
+                href="https://github.com/Gmiee/RollDice-game-with-python"
+                target="_blank"
+                className="flex items-center gap-2"
+              >
+                <FaGithub style={{ fontSize: "1rem" }} /> Roll the dice game
+                using python <sup>New</sup>
+              </a>
+            </p>
+
             <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
               <a
                 href="https://annapurnaa.in/"
@@ -161,7 +162,7 @@ const BentoLayout = () => {
         </div>
 
         <div className="border p-3 rounded-2xl h-auto bg-white flex justify-around flex-col">
-          <div className="skills text-gray8 font-bold text-3xl mb-0 pb-3">
+          <div className="skills text-gray8 font-bold text-xl mb-0 pb-3">
             <p>Quick Links</p>
           </div>
           <div className="links flex flex-wrap justify-center gap-5 flex-col mx-3 px-1 text-md">
@@ -219,7 +220,7 @@ const BentoLayout = () => {
 
         {/* Compartment 4 */}
         <div className="border p-4 rounded-2xl h-auto col-span-2 max-sm:col-span-1 bg-white flex justify-between flex-col">
-          <div className="skills text-gray8 font-bold text-3xl pb-2">
+          <div className="skills text-gray8 font-bold text-xl pb-2">
             <p>Skills</p>
           </div>
           <div>
