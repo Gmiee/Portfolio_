@@ -93,7 +93,7 @@ const BentoLayout = () => {
         </div>
       </div> */}
 
-        <div className="border p-4 rounded-2xl h-auto max-sm:h-fit max-lg:h-full col-span-1 max-sm:col-span-1 bg-white">
+        <div className="border p-4 rounded-2xl h-auto max-sm:h-fit max-lg:h-fit col-span-1 max-sm:col-span-1 max-md:h-fit bg-white">
           <div className="skills text-gray8 font-bold text-3xl">
             <p>Goals</p>
           </div>
@@ -111,6 +111,33 @@ const BentoLayout = () => {
         </div>
 
         {/* Compartment 3 */}
+        <div className="border rounded-2xl h-fit bg-white col-span-3 max-sm:col-span-1 max-md:col-span-2 max-lg:col-span-2">
+          <div className="latest text-gray8 font-bold text-3xl pb-2 p-4">
+            <p>Latest</p>
+          </div>
+          <div className="recent p-5 flex flex-wrap gap-3 justify-center">
+            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+              <a
+                href="https://github.com/Gmiee/Automated-msg-in-whatsapp"
+                target="_blank" className="flex items-center gap-1"
+              >
+                {" "}
+                Python Automation: Sending Messages on WhatsApp Web
+                <FaGithub style={{fontSize:'1rem'}} />
+              </a>
+            </p>
+            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
+              <a href="https://github.com/Gmiee/RollDice-game-with-python" target="_blank" className="flex items-center gap-1">
+               Roll the dice game using python <FaGithub style={{fontSize:'1rem'}} />
+              </a>
+            </p>
+            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
+            
+              <a href="https://annapurnaa.in/" target="_blank" className="flex items-center gap-1">ANNAPURNAA<GoArrowUpRight style={{fontSize:'1.2rem'}} /> </a>
+            </p>
+          </div>
+        </div>
+
         <div className="border p-3 rounded-2xl h-auto bg-white flex justify-around flex-col">
           <div className="skills text-gray8 font-bold text-3xl mb-0 pb-3">
             <p>Quick Links</p>
@@ -251,32 +278,6 @@ const BentoLayout = () => {
           </div>
         </div>
 
-        <div className="border rounded-2xl h-fit bg-white col-span-3 max-sm:col-span-1 max-md:col-span-1 max-lg:col-span-1">
-          <div className="latest text-gray8 font-bold text-3xl pb-2 p-4">
-            <p>Latest</p>
-          </div>
-          <div className="recent p-5 flex flex-wrap gap-3 justify-center">
-            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-              <a
-                href="https://github.com/Gmiee/Automated-msg-in-whatsapp"
-                target="_blank" className="flex items-center gap-1"
-              >
-                {" "}
-                Python Automation: Sending Messages on WhatsApp Web
-                <FaGithub />
-              </a>
-            </p>
-            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
-              <a href="https://github.com/Gmiee/RollDice-game-with-python" target="_blank" className="flex items-center gap-1">
-               Roll the dice game using python <FaGithub />
-              </a>
-            </p>
-            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
-            
-              <a href="https://annapurnaa.in/" target="_blank" className="flex items-center gap-1">ANNAPURNAA<GoArrowUpRight /> </a>
-            </p>
-          </div>
-        </div>
       </div>
       <div className="credits flex justify-center items-center bg-surface font-bold pb-3">
         <p>
@@ -286,7 +287,7 @@ const BentoLayout = () => {
             href="https://vikasassudani.in/"
             target="_blank"
           >
-            Vikas Assudani
+            Vikas Assudani {" "}
           </a>
           👨‍💻
         </p>
