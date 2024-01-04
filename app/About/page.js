@@ -119,21 +119,25 @@ const BentoLayout = () => {
             <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
               <a
                 href="https://github.com/Gmiee/Automated-msg-in-whatsapp"
-                target="_blank" className="flex items-center gap-1"
+                target="_blank" className="flex items-center gap-2"
               >
                 {" "}
-                Python Automation: Sending Messages on WhatsApp Web
                 <FaGithub style={{fontSize:'1rem'}} />
+                Py Automation:Sending Messages on WhatsApp Web
               </a>
             </p>
             <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
-              <a href="https://github.com/Gmiee/RollDice-game-with-python" target="_blank" className="flex items-center gap-1">
-               Roll the dice game using python <FaGithub style={{fontSize:'1rem'}} />
+              <a href="https://github.com/Gmiee/RollDice-game-with-python" target="_blank" className="flex items-center gap-2">
+              <FaGithub style={{fontSize:'1rem'}} /> Roll the dice game using python 
               </a>
             </p>
             <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
             
-              <a href="https://annapurnaa.in/" target="_blank" className="flex items-center gap-1">ANNAPURNAA<GoArrowUpRight style={{fontSize:'1.2rem'}} /> </a>
+              <a href="https://annapurnaa.in/" target="_blank" className="flex items-center gap-2"><GoArrowUpRight style={{fontSize:'1.2rem'}} />ANNAPURNAA </a>
+            </p>
+            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
+            
+              <a href="https://text-utilities-kappa.vercel.app/" target="_blank" className="flex items-center gap-2 capitalize"><GoArrowUpRight style={{fontSize:'1.2rem'}} />Text-utility web app using React</a>
             </p>
           </div>
         </div>
