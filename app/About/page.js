@@ -181,6 +181,16 @@ const BentoLayout = () => {
               </a>
             </div>
             <div>
+              <a
+                href="https://x.com/Gmieee23?t=wEPgroCDMZYiEREo4nDq2Q&s=09"
+                target="_blank"
+              >
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
+                  <FaXTwitter /> Twitter
+                </p>
+              </a>
+            </div>
+            <div>
               <a href="mailto:gmieee23@gmail.com">
                 <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
                   <IoMail /> Mail
@@ -205,16 +215,7 @@ const BentoLayout = () => {
                 </p>
               </a>
             </div>
-            <div>
-              <a
-                href="https://x.com/Gmieee23?t=wEPgroCDMZYiEREo4nDq2Q&s=09"
-                target="_blank"
-              >
-                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
-                  <FaXTwitter /> Twitter
-                </p>
-              </a>
-            </div>
+            
           </div>
         </div>
 
