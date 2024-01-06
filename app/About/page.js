@@ -102,7 +102,7 @@ const BentoLayout = () => {
               Passionate Student and Developer,
             </p>
             <p className="text-center text-bp">
-              On a road to become MERN Stack Dev!
+              On a road to become MERN Stack Dev by the end of 2024!
             </p>
             <p className="text-center text-gray8">
               Excited to learn new things.
@@ -263,6 +263,31 @@ const BentoLayout = () => {
                 GITHUB
               </p>
             </div>
+
+
+            {/* <div className="MERN my-1 ">
+              <p>MERN Stack:</p>
+              <div className="flex flex-wrap justify-center mt-4 gap-3 ">
+               
+                  <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold capitalize">
+                    MongoDB{" "}
+                  </p>
+                
+                  <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold capitalize">
+                    ExpressJs
+                  </p>
+
+                  <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold capitalize">
+                  ReactJs
+                  </p>
+
+                  <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold capitalize">
+                    NodeJs
+                  </p>
+              </div>
+            </div> */}
+
+
             <div className="programming my-1 ">
               <p className="">Programming:</p>
               <div className="flex flex-wrap justify-center mt-4 gap-3 uppercase">
@@ -274,6 +299,10 @@ const BentoLayout = () => {
                 </p>
               </div>
             </div>
+
+
+
+
             <div className="certificate my-1 ">
               <p>Certification:</p>
               <div className="flex flex-wrap justify-center mt-4 gap-3 ">
