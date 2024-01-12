@@ -8,6 +8,7 @@ import { BsFillPinAngleFill } from "react-icons/bs";
 import { FaXTwitter } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
 import { GoArrowUpRight } from "react-icons/go";
+import { CiCircleMore } from "react-icons/ci";
 import { Toaster, toast } from "react-hot-toast";
 
 const showToast = () => {
@@ -27,9 +28,9 @@ const BentoLayout = () => {
 
   return (
     <>
-      <Toaster position="top-right" closeButton />
+      <Toaster position="top-center" closeButton />
 
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 p-5 font-semibold h-full bg-surface ">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 p-5 font-semibold h-full bg-surface  ">
         <div className="border p-4 rounded-2xl h-max bg-white flex justify-around flex-col col-span-2 max-sm:col-span-1">
           <div className="img flex justify-center items-center h-[70%] flex-col">
             {/* <div className="bg h-auto w-fit bg-bp flex rounded-full p-0"> */}
@@ -116,6 +117,15 @@ const BentoLayout = () => {
             <p>Recent</p>
           </div>
           <div className="recent p-5 flex flex-wrap gap-3 justify-center">
+          <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
+              <a
+                href="https://github.com/Gmiee/Socket.io"
+                target="_blank"
+                className="flex items-center gap-2 "
+              >
+                <FaGithub style={{ fontSize: "1rem" }} /> Private chat Web-app<sup>New</sup>
+              </a>
+            </p>
             <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
               <a
                 href="https://github.com/Gmiee/Automated-msg-in-whatsapp"
@@ -137,6 +147,7 @@ const BentoLayout = () => {
                 using python <sup>New</sup>
               </a>
             </p>
+           
 
             <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
               <a
@@ -159,6 +170,7 @@ const BentoLayout = () => {
               </a>
             </p>
           </div>
+              <a href="https://jimmyyy.bio.link/" target="_blank" className="flex justify-end pb-3 pr-4"><CiCircleMore style={{fontSize:'1.3rem'}} /></a>          
         </div>
 
         <div className="border p-3 rounded-2xl h-auto bg-white flex justify-around flex-col">
