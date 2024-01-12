@@ -13,8 +13,10 @@ module.exports = {
         gray5:'#c7c7c7',
         gray8:'#909090',
         gray9:'#e9e9e9',
-        avail:'#4FD64C'
-        
+        avail:'#4FD64C',
+        surface2:'#0A0A0A',
+        blk:'#212121',
+        color:'#fff'
       },
       fontFamily: {
         sans: ['sans','serif'],
@@ -27,4 +29,5 @@ module.exports = {
     },
   },
   plugins: [],
+  darkMode:'class'
 }

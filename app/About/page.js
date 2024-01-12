@@ -9,6 +9,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
 import { GoArrowUpRight } from "react-icons/go";
 import { CiCircleMore } from "react-icons/ci";
+import ThemeSwitcher from "../ThemeSwitcher";
 import { Toaster, toast } from "react-hot-toast";
 
 const showToast = () => {
@@ -30,8 +31,9 @@ const BentoLayout = () => {
     <>
       <Toaster position="top-center" closeButton />
 
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 p-5 font-semibold h-full bg-surface  ">
-        <div className="border p-4 rounded-2xl h-max bg-white flex justify-around flex-col col-span-2 max-sm:col-span-1">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 p-5 font-semibold h-full bg-surface dark:bg-surface2 ">
+        <div className="border p-4 rounded-2xl h-max bg-white text-bp flex justify-around flex-col col-span-2 max-sm:col-span-1 dark:bg-blk dark:border-0 ">
+      <ThemeSwitcher/>
           <div className="img flex justify-center items-center h-[70%] flex-col">
             {/* <div className="bg h-auto w-fit bg-bp flex rounded-full p-0"> */}
             <Image
@@ -43,8 +45,8 @@ const BentoLayout = () => {
               priority={false}
             />
             {/* </div> */}
-            <p className="text-3xl text-bp font-bold">Jenish Khemnani</p>
-            <p className="uppercase text-xl text-gray8">web dev</p>
+            <p className="text-3xl text-bp font-bold dark:text-white">Jenish Khemnani</p>
+            <p className="uppercase text-xl text-gray8 ">web dev</p>
           </div>
           <div className="statusOfWork flex items-center justify-center mt-0 gap-3 bg-green-100 hover:bg-avail px-5 py-2 w-fit m-auto rounded-full">
             <p className="h-3 w-3 rounded-lg bg-avail hover:none transition duration-300 ease-in-out "></p>
@@ -94,36 +96,37 @@ const BentoLayout = () => {
         </div>
       </div> */}
 
-        <div className="border p-4 rounded-2xl h-auto max-sm:h-fit max-lg:h-fit col-span-1 max-sm:col-span-1 max-md:h-fit bg-white">
+        <div className="border p-4 rounded-2xl h-auto max-sm:h-fit max-lg:h-fit col-span-1 max-sm:col-span-1 max-md:h-fit bg-white dark:bg-blk dark:border-0">
           <div className="skills text-gray8 font-bold text-xl ">
-            <p>Goals</p>
+            <p className="dark:text-white">Goals</p>
           </div>
           <div className="main flex flex-col items-center justify-evenly h-full max-md:text-base max-sm:text-sm">
-            <p className="text-center text-gray8">
+            <p className="text-center text-gray8 dark:text-white">
               Passionate Student and Developer,
             </p>
-            <p className="text-center text-bp">
+            <p className="text-center text-bp dark:text-white">
               On a road to become MERN Stack Dev by the end of 2024!
             </p>
-            <p className="text-center text-gray8">
+            <p className="text-center text-gray8 dark:text-white">
               Excited to learn new things.
             </p>
           </div>
         </div>
 
         {/* Compartment 3 */}
-        <div className="border rounded-2xl h-fit bg-white col-span-3 max-sm:col-span-1 max-md:col-span-2 max-lg:col-span-2">
+        <div className="border rounded-2xl h-fit bg-white col-span-3 max-sm:col-span-1 max-md:col-span-2 max-lg:col-span-2 dark:bg-blk dark:border-0">
           <div className="latest text-gray8 font-bold text-xl pb-2 p-4">
-            <p>Recent</p>
+            <p className="dark:text-white">Recent</p>
           </div>
           <div className="recent p-5 flex flex-wrap gap-3 justify-center">
-          <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
+            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
               <a
                 href="https://github.com/Gmiee/Socket.io"
                 target="_blank"
                 className="flex items-center gap-2 "
               >
-                <FaGithub style={{ fontSize: "1rem" }} /> Private chat Web-app<sup>New</sup>
+                <FaGithub style={{ fontSize: "1rem" }} /> Private chat Web-app
+                <sup>New</sup>
               </a>
             </p>
             <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
@@ -132,7 +135,6 @@ const BentoLayout = () => {
                 target="_blank"
                 className="flex items-center gap-2 "
               >
-                
                 <FaGithub style={{ fontSize: "1rem" }} />
                 Automating WhatsApp Web Messages with Python<sup>New</sup>
               </a>
@@ -147,7 +149,6 @@ const BentoLayout = () => {
                 using python <sup>New</sup>
               </a>
             </p>
-           
 
             <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
               <a
@@ -155,8 +156,7 @@ const BentoLayout = () => {
                 target="_blank"
                 className="flex items-center gap-2"
               >
-                ANNAPURNAA{" "}
-                <GoArrowUpRight style={{ fontSize: "1.2rem" }} />
+                ANNAPURNAA <GoArrowUpRight style={{ fontSize: "1.2rem" }} />
               </a>
             </p>
             <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
@@ -170,12 +170,18 @@ const BentoLayout = () => {
               </a>
             </p>
           </div>
-              <a href="https://jimmyyy.bio.link/" target="_blank" className="flex justify-end pb-3 pr-4"><CiCircleMore style={{fontSize:'1.3rem'}} /></a>          
+          <a
+            href="https://jimmyyy.bio.link/"
+            target="_blank"
+            className="flex justify-end pb-3 pr-4"
+          >
+            <CiCircleMore style={{ fontSize: "1.3rem" }} />
+          </a>
         </div>
 
-        <div className="border p-3 rounded-2xl h-auto bg-white flex justify-around flex-col">
+        <div className="border p-3 rounded-2xl h-auto bg-white flex justify-around flex-col dark:bg-blk dark:border-0">
           <div className="skills text-gray8 font-bold text-xl mb-0 pb-3">
-            <p>Quick Links</p>
+            <p className="dark:text-white">Quick Links</p>
           </div>
           <div className="links flex flex-wrap justify-center gap-5 flex-col mx-3 px-1 text-md">
             <div>
@@ -227,21 +233,20 @@ const BentoLayout = () => {
                 </p>
               </a>
             </div>
-            
           </div>
         </div>
 
         {/* Compartment 4 */}
-        <div className="border p-4 rounded-2xl h-auto col-span-2 max-sm:col-span-1 bg-white flex justify-between flex-col">
-          <div className="skills text-gray8 font-bold text-xl pb-2">
+        <div className="border p-4 rounded-2xl h-auto col-span-2 max-sm:col-span-1 bg-white flex justify-between flex-col dark:bg-blk dark:border-0">
+          <div className="skills text-gray8 dark:text-white font-bold text-xl pb-2">
             <p>Skills</p>
           </div>
           <div>
-            <p>Technologies:</p>
+            <p className="dark:text-white">Technologies:</p>
 
-            <div className="technologies flex flex-wrap justify-center mt-4 gap-3 uppercase">
+            <div className="technologies flex flex-wrap justify-center mt-4 gap-3 uppercase ">
               {/* Skills content */}
-              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
+              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold  ">
                 HTML & CSS
               </p>
               <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
@@ -276,7 +281,6 @@ const BentoLayout = () => {
               </p>
             </div>
 
-
             {/* <div className="MERN my-1 ">
               <p>MERN Stack:</p>
               <div className="flex flex-wrap justify-center mt-4 gap-3 ">
@@ -299,9 +303,8 @@ const BentoLayout = () => {
               </div>
             </div> */}
 
-
             <div className="programming my-1 ">
-              <p className="">Programming:</p>
+              <p className="dark:text-white">Programming:</p>
               <div className="flex flex-wrap justify-center mt-4 gap-3 uppercase">
                 <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
                   JAVASCRIPT
@@ -312,11 +315,8 @@ const BentoLayout = () => {
               </div>
             </div>
 
-
-
-
             <div className="certificate my-1 ">
-              <p>Certification:</p>
+              <p className="dark:text-white">Certification:</p>
               <div className="flex flex-wrap justify-center mt-4 gap-3 ">
                 <a
                   href="https://www.freecodecamp.org/certification/fcc2d3a035f-5353-49b6-867d-8f3d03bbc619/responsive-web-design"
@@ -337,13 +337,13 @@ const BentoLayout = () => {
           </div>
           <div className="projects flex justify-evenly items-center my-2">
             {/* Projects section */}
-            <p className=" text-gray5 text-md">
+            <p className=" text-gray5 text-md dark:text-white">
               Note: All of these are self-taught.🚀
             </p>
           </div>
         </div>
       </div>
-      <div className="credits flex justify-center items-center bg-surface font-bold pb-3">
+      <div className="credits flex justify-center items-center bg-surface font-bold pb-3 dark:bg-surface2 dark:text-white">
         <p>
           UI by{" "}
           <a
