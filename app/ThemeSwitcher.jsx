@@ -30,16 +30,16 @@ const ThemeSwitcher = () => {
 
         <>
 
-            {/* <div className='flex justify-end'>
-    <button onClick={toggleTheme}>
+            <div className='flex justify-end'>
+    <button className='dark:text-white' onClick={toggleTheme}>
         {theme === 'dark' ? <MdOutlineLightMode /> : <MdOutlineDarkMode />  }
       </button>
-    </div> */}
+    </div>
 
-            <div className='flex'>
+            {/* <div className='flex'>
                 <button className='dark:text-white' onClick={() => setTheme('light')}><MdOutlineLightMode /></button>
                 <button className='dark:text-white' onClick={() => setTheme('dark')}><MdOutlineDarkMode /></button>
-            </div>
+            </div> */}
         </>
     )
 }
