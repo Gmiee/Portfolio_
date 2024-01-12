@@ -31,7 +31,7 @@ const ThemeSwitcher = () => {
 
         <>
 
-            <div className='flex justify-end items-center'>
+            <div className='flex justify-end items-center text-xl'>
                 <button className='dark:text-white' onClick={toggleTheme}>
                     {theme === 'dark' ? <MdOutlineLightMode /> : <MdOutlineDarkMode />}
                 </button>

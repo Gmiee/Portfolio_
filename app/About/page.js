@@ -20,7 +20,7 @@ const showToast = () => {
         t.visible ? 'animate-enter' : 'animate-leave'
       } bg-white border-2 dark:border-0 dark:bg-black rounded-lg flex w-fit`}
     >
-      <div className="flex-1 p-3">
+      <div className="flex-1 p-3 py-2">
             <p className="text-md font-medium text-gray-900 dark:text-white text-center">
              👋🏻 Hey There! 
             </p>  
