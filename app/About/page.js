@@ -12,6 +12,7 @@ import { CiCircleMore } from "react-icons/ci";
 import ThemeSwitcher from "../ThemeSwitcher";
 import { Toaster, toast } from "react-hot-toast";
 
+
 const showToast = () => {
   toast("Hey There!", {
     style: {
@@ -22,10 +23,10 @@ const showToast = () => {
   });
 };
 
+showToast();
 const BentoLayout = () => {
-  useEffect(() => {
-    showToast();
-  }, []);
+  // useEffect(() => {
+  // }, []);
 
   return (
     <>
@@ -173,7 +174,7 @@ const BentoLayout = () => {
           <a
             href="https://jimmyyy.bio.link/"
             target="_blank"
-            className="flex justify-end pb-3 pr-4"
+            className="flex justify-end pb-3 pr-4 dark:text-white"
           >
             <CiCircleMore style={{ fontSize: "1.3rem" }} />
           </a>
