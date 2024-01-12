@@ -14,13 +14,20 @@ import { Toaster, toast } from "react-hot-toast";
 
 
 const showToast = () => {
-  toast("Hey There!", {
-    style: {
-      border: "1px solid #f6f6f7",
-      padding: "5px",
-    },
-    icon: "👋",
-  });
+  toast.custom((t) => (
+    <div
+      className={`${
+        t.visible ? 'animate-enter' : 'animate-leave'
+      } bg-white border-2 dark:border-0 dark:bg-black rounded-lg flex w-fit`}
+    >
+      <div className="flex-1 p-3">
+            <p className="text-md font-medium text-gray-900 dark:text-white text-center">
+             👋🏻 Hey There! 
+            </p>  
+        </div>
+      </div>
+      
+  ))
 };
 
 showToast();
@@ -120,7 +127,7 @@ const BentoLayout = () => {
             <p className="dark:text-white">Recent</p>
           </div>
           <div className="recent p-5 flex flex-wrap gap-3 justify-center">
-            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
+            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white  hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold ">
               <a
                 href="https://github.com/Gmiee/Socket.io"
                 target="_blank"
@@ -130,7 +137,7 @@ const BentoLayout = () => {
                 <sup>New</sup>
               </a>
             </p>
-            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk  font-semibold">
               <a
                 href="https://github.com/Gmiee/Automated-msg-in-whatsapp"
                 target="_blank"
@@ -140,7 +147,7 @@ const BentoLayout = () => {
                 Automating WhatsApp Web Messages with Python<sup>New</sup>
               </a>
             </p>
-            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
+            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk  font-semibold ">
               <a
                 href="https://github.com/Gmiee/RollDice-game-with-python"
                 target="_blank"
@@ -151,7 +158,7 @@ const BentoLayout = () => {
               </a>
             </p>
 
-            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
+            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk  font-semibold ">
               <a
                 href="https://annapurnaa.in/"
                 target="_blank"
@@ -160,7 +167,7 @@ const BentoLayout = () => {
                 ANNAPURNAA <GoArrowUpRight style={{ fontSize: "1.2rem" }} />
               </a>
             </p>
-            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold ">
+            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk  font-semibold ">
               <a
                 href="https://text-utilities-kappa.vercel.app/"
                 target="_blank"
@@ -187,14 +194,14 @@ const BentoLayout = () => {
           <div className="links flex flex-wrap justify-center gap-5 flex-col mx-3 px-1 text-md">
             <div>
               <a href="https://github.com/Gmiee" target="_blank">
-                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
                   <FaGithub /> Github
                 </p>
               </a>
             </div>
             <div>
               <a href="https://jimmyyy.bio.link/" target="_blank">
-                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md  px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
                   <BsFillPinAngleFill /> Projects
                 </p>
               </a>
@@ -204,14 +211,14 @@ const BentoLayout = () => {
                 href="https://x.com/Gmieee23?t=wEPgroCDMZYiEREo4nDq2Q&s=09"
                 target="_blank"
               >
-                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md  px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
                   <FaXTwitter /> Twitter
                 </p>
               </a>
             </div>
             <div>
               <a href="mailto:gmieee23@gmail.com">
-                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md  px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
                   <IoMail /> Mail
                 </p>
               </a>
@@ -222,14 +229,14 @@ const BentoLayout = () => {
                 href="https://www.linkedin.com/in/jenish-khemnani-b2ab31233/"
                 target="_blank"
               >
-                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md  px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
                   <FaLinkedin /> LinkedIn
                 </p>
               </a>
             </div>
             <div>
               <a href="https://instagram.com/jimmmyyy_23" target="_blank">
-                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md  px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
                   <RiInstagramFill /> Instagram
                 </p>
               </a>
@@ -247,22 +254,22 @@ const BentoLayout = () => {
 
             <div className="technologies flex flex-wrap justify-center mt-4 gap-3 uppercase ">
               {/* Skills content */}
-              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold  ">
+              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold  ">
                 HTML & CSS
               </p>
-              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold">
                 TAILWIND
               </p>
-              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold">
                 BOOTSTRAP
               </p>
-              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold">
                 chakra ui
               </p>
-              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold">
                 REACT JS
               </p>
-              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold">
                 NEXT JS
               </p>
               {/* <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
@@ -274,10 +281,10 @@ const BentoLayout = () => {
               <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
                MY SQL
               </p> */}
-              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold">
                 GIT
               </p>
-              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold">
                 GITHUB
               </p>
             </div>
@@ -307,10 +314,10 @@ const BentoLayout = () => {
             <div className="programming my-1 ">
               <p className="dark:text-white">Programming:</p>
               <div className="flex flex-wrap justify-center mt-4 gap-3 uppercase">
-                <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+                <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold">
                   JAVASCRIPT
                 </p>
-                <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+                <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold">
                   PYTHON
                 </p>
               </div>
@@ -323,13 +330,13 @@ const BentoLayout = () => {
                   href="https://www.freecodecamp.org/certification/fcc2d3a035f-5353-49b6-867d-8f3d03bbc619/responsive-web-design"
                   target="_blank"
                 >
-                  <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold capitalize">
+                  <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold capitalize">
                     Responsive-web-design from Free Code Camp{" "}
                   </p>
                 </a>
 
                 <a href="https://www.hackerrank.com/certificates/c13919c7f36b">
-                  <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold capitalize">
+                  <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold capitalize">
                     CSS certificate from Hacker Rank
                   </p>
                 </a>
