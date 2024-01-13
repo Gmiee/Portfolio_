@@ -127,7 +127,7 @@ const BentoLayout = () => {
             <p className="dark:text-white">Recent</p>
           </div>
           <div className="recent p-5 flex flex-wrap gap-3 justify-center">
-            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white  hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold ">
+            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white  hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-blk  font-semibold ">
               <a
                 href="https://github.com/Gmiee/Socket.io"
                 target="_blank"
@@ -137,7 +137,7 @@ const BentoLayout = () => {
                 <sup>New</sup>
               </a>
             </p>
-            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk  font-semibold">
+            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-blk   font-semibold">
               <a
                 href="https://github.com/Gmiee/Automated-msg-in-whatsapp"
                 target="_blank"
@@ -147,7 +147,7 @@ const BentoLayout = () => {
                 Automating WhatsApp Web Messages with Python<sup>New</sup>
               </a>
             </p>
-            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk  font-semibold ">
+            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-blk   font-semibold ">
               <a
                 href="https://github.com/Gmiee/RollDice-game-with-python"
                 target="_blank"
@@ -158,7 +158,7 @@ const BentoLayout = () => {
               </a>
             </p>
 
-            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk  font-semibold ">
+            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-blk   font-semibold ">
               <a
                 href="https://annapurnaa.in/"
                 target="_blank"
@@ -167,7 +167,7 @@ const BentoLayout = () => {
                 ANNAPURNAA <GoArrowUpRight style={{ fontSize: "1.2rem" }} />
               </a>
             </p>
-            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk  font-semibold ">
+            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-blk  font-semibold ">
               <a
                 href="https://text-utilities-kappa.vercel.app/"
                 target="_blank"
