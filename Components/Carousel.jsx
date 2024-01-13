@@ -33,9 +33,12 @@ const Carousel = () => {
                     <img src="/05.jpg" alt="img3" />
                 </SwiperSlide>
             </Swiper>
-            <div className="txt flex flex-wrap p-2">
+            <div className="txt flex flex-wrap p-2 items-center">
                 We are currently conducting a humble initiative to provide meals for those in need.
-                <button className='bg-surface rounded-lg text-bp px-4 py-2 hover:bg-transparent dark:bg-black dark:text-white dark:hover:bg-blk flex justify-center gap-1 capitalize'>Join us now
+                <button className='bg-surface rounded-lg text-bp px-4 py-2 hover:bg-transparent dark:bg-black dark:text-white dark:hover:bg-blk flex justify-center gap-1 capitalize' >
+                    <a href='https://annapurnaa.in/' target='_blank'>
+                    Join us now
+                    </a>
                     <CiLocationArrow1 style={{ fontSize: '1.3rem' }} />
                 </button>
 
