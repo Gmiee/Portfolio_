@@ -11,23 +11,23 @@ import { GoArrowUpRight } from "react-icons/go";
 import { CiCircleMore } from "react-icons/ci";
 import ThemeSwitcher from "../ThemeSwitcher";
 import { Toaster, toast } from "react-hot-toast";
+import Carousel from "@/Components/Carousel";
 
 
 const showToast = () => {
   toast.custom((t) => (
     <div
       className={`${
-        t.visible ? 'animate-enter' : 'animate-leave'
+        t.visible ? "animate-enter" : "animate-leave"
       } bg-white border-2 dark:border-0 dark:bg-black rounded-lg flex w-fit`}
     >
       <div className="flex-1 p-3 py-2">
-            <p className="text-md font-medium text-gray-900 dark:text-white text-center">
-             👋🏻 Hey There! 
-            </p>  
-        </div>
+        <p className="text-md font-medium text-gray-900 dark:text-white text-center">
+          👋🏻 Hey There!
+        </p>
       </div>
-      
-  ))
+    </div>
+  ));
 };
 
 showToast();
@@ -39,9 +39,9 @@ const BentoLayout = () => {
     <>
       <Toaster position="top-center" closeButton />
 
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 p-5 font-semibold h-full bg-surface dark:bg-surface2 ">
-        <div className="border p-4 rounded-2xl h-max bg-white text-bp flex justify-around flex-col col-span-2 max-sm:col-span-1 dark:bg-blk dark:border-0 ">
-      <ThemeSwitcher/>
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4  gap-4 p-5 font-semibold h-full bg-surface dark:bg-surface2 ">
+        <div className="border p-4 rounded-2xl h-full bg-white text-bp flex justify-around flex-col col-span-2 max-sm:col-span-1 dark:bg-blk dark:border-0 ">
+          <ThemeSwitcher />
           <div className="img flex justify-center items-center h-[70%] flex-col">
             {/* <div className="bg h-auto w-fit bg-bp flex rounded-full p-0"> */}
             <Image
@@ -53,10 +53,12 @@ const BentoLayout = () => {
               priority={false}
             />
             {/* </div> */}
-            <p className="text-3xl text-bp font-bold dark:text-white">Jenish Khemnani</p>
+            <p className="text-3xl text-bp font-bold dark:text-white">
+              Jenish Khemnani
+            </p>
             <p className="uppercase text-xl text-gray8 ">web dev</p>
           </div>
-          <div className="statusOfWork flex items-center justify-center mt-0 gap-3 bg-green-100 hover:bg-avail px-5 py-2 w-fit m-auto rounded-full">
+          <div className="statusOfWork flex items-center justify-center mt-2 gap-3 bg-green-100 hover:bg-avail px-5 py-2 w-fit m-auto rounded-full">
             <p className="h-3 w-3 rounded-lg bg-avail hover:none transition duration-300 ease-in-out "></p>
             <a href="mailto:gmieee23@gmail.com">
               <p className="text-md font-semibold text-avail transition duration-300 ease-in hover:text-white hover:-translate-x-3">
@@ -65,44 +67,6 @@ const BentoLayout = () => {
             </a>
           </div>
         </div>
-
-        {/* Compartment 2 */}
-        {/* <div className="border p-4 rounded-2xl h-[369px] bg-white flex justify-between flex-col">
-        <div className="skills text-gray8 font-bold text-3xl">
-          <p>Skills</p>
-        </div>
-        <div className="technologies flex flex-wrap justify-center mt-4 gap-3 uppercase">
-          
-          <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-            HTML&CSS
-          </p>
-          <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-            JAVASCRIPT
-          </p>
-          <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-            GITHUB
-          </p>
-          <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-            REACT JS
-          </p>
-          <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-            NEXT JS
-          </p>
-          <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-            TAILWIND
-          </p>
-          <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-            BOOTSTRAP
-          </p>
-        </div>
-
-        <div className="projects flex justify-evenly items-center ">
-          
-          <p className=" text-gray5 text-md">
-            Note: All these technologies are self-taught🚀
-          </p>
-        </div>
-      </div> */}
 
         <div className="border p-4 rounded-2xl h-auto max-sm:h-fit max-lg:h-fit col-span-1 max-sm:col-span-1 max-md:h-fit bg-white dark:bg-blk dark:border-0">
           <div className="skills text-gray8 font-bold text-xl ">
@@ -118,6 +82,63 @@ const BentoLayout = () => {
             <p className="text-center text-gray8 dark:text-white">
               Excited to learn new things.
             </p>
+          </div>
+        </div>
+
+        <div className="border p-3 rounded-2xl h-auto bg-white flex justify-around flex-col row-span-2 max-lg:col-span-2 max-sm:col-span-1 dark:bg-blk dark:border-0">
+          <div className="skills text-gray8 font-bold text-xl mb-0 pb-3">
+            <p className="dark:text-white">Quick Links</p>
+          </div>
+          <div className="links flex flex-wrap justify-center gap-7 flex-col mx-3 px-1 text-md">
+            <div>
+              <a href="https://github.com/Gmiee" target="_blank">
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
+                  <FaGithub /> Github
+                </p>
+              </a>
+            </div>
+            <div>
+              <a href="https://jimmyyy.bio.link/" target="_blank">
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md  px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
+                  <BsFillPinAngleFill /> Projects
+                </p>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://x.com/Gmieee23?t=wEPgroCDMZYiEREo4nDq2Q&s=09"
+                target="_blank"
+              >
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md  px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
+                  <FaXTwitter /> Twitter
+                </p>
+              </a>
+            </div>
+            <div>
+              <a href="mailto:gmieee23@gmail.com">
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md  px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
+                  <IoMail /> Mail
+                </p>
+              </a>
+            </div>
+
+            <div>
+              <a
+                href="https://www.linkedin.com/in/jenish-khemnani-b2ab31233/"
+                target="_blank"
+              >
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md  px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
+                  <FaLinkedin /> LinkedIn
+                </p>
+              </a>
+            </div>
+            <div>
+              <a href="https://instagram.com/jimmmyyy_23" target="_blank">
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md  px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
+                  <RiInstagramFill /> Instagram
+                </p>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -185,63 +206,6 @@ const BentoLayout = () => {
           >
             <CiCircleMore style={{ fontSize: "1.3rem" }} />
           </a>
-        </div>
-
-        <div className="border p-3 rounded-2xl h-auto bg-white flex justify-around flex-col dark:bg-blk dark:border-0">
-          <div className="skills text-gray8 font-bold text-xl mb-0 pb-3">
-            <p className="dark:text-white">Quick Links</p>
-          </div>
-          <div className="links flex flex-wrap justify-center gap-5 flex-col mx-3 px-1 text-md">
-            <div>
-              <a href="https://github.com/Gmiee" target="_blank">
-                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
-                  <FaGithub /> Github
-                </p>
-              </a>
-            </div>
-            <div>
-              <a href="https://jimmyyy.bio.link/" target="_blank">
-                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md  px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
-                  <BsFillPinAngleFill /> Projects
-                </p>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://x.com/Gmieee23?t=wEPgroCDMZYiEREo4nDq2Q&s=09"
-                target="_blank"
-              >
-                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md  px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
-                  <FaXTwitter /> Twitter
-                </p>
-              </a>
-            </div>
-            <div>
-              <a href="mailto:gmieee23@gmail.com">
-                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md  px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
-                  <IoMail /> Mail
-                </p>
-              </a>
-            </div>
-
-            <div>
-              <a
-                href="https://www.linkedin.com/in/jenish-khemnani-b2ab31233/"
-                target="_blank"
-              >
-                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md  px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
-                  <FaLinkedin /> LinkedIn
-                </p>
-              </a>
-            </div>
-            <div>
-              <a href="https://instagram.com/jimmmyyy_23" target="_blank">
-                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md  px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
-                  <RiInstagramFill /> Instagram
-                </p>
-              </a>
-            </div>
-          </div>
         </div>
 
         {/* Compartment 4 */}
@@ -349,6 +313,15 @@ const BentoLayout = () => {
               Note: All of these are self-taught.🚀
             </p>
           </div>
+        </div>
+
+        <div className="others bg-white text-bp dark:bg-blk dark:text-white col-span-2 rounded-2xl max-sm:col-span-1 p-3 h-fit">
+          <div className="skills text-gray8 dark:text-white font-bold text-xl pb-2">
+            <p>Other</p>
+          </div>
+         
+         <Carousel/>
+          
         </div>
       </div>
       <div className="credits flex justify-center items-center bg-surface font-bold pb-3 dark:bg-surface2 dark:text-white">
