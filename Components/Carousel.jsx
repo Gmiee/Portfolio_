@@ -12,7 +12,7 @@ const Carousel = () => {
 
     return (
         <>
-            <div className='flex max-sm:grid'> 
+            <div className='flex gap-4 max-sm:grid max-md:grid'> 
                 <Swiper
                     direction={'horizontal'}
                     slidesPerView={1}
