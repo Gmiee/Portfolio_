@@ -23,7 +23,7 @@ const ThemeSwitcher = () => {
         } else if (theme === 'light') {
             setTheme('dark');
         } else {
-            setTheme('dark');
+            setTheme('');
         }
     };
 
