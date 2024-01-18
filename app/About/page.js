@@ -13,7 +13,6 @@ import ThemeSwitcher from "../ThemeSwitcher";
 import { Toaster, toast } from "react-hot-toast";
 import Carousel from "@/Components/Carousel";
 
-
 const showToast = () => {
   toast.custom((t) => (
     <div
@@ -244,6 +243,9 @@ const BentoLayout = () => {
               </p>
               <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
                MY SQL
+              </p> 
+              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
+               NODE JS
               </p> */}
               <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold">
                 GIT
@@ -319,9 +321,8 @@ const BentoLayout = () => {
           <div className="skills text-gray8 dark:text-white font-bold text-xl pb-2">
             <p>Other</p>
           </div>
-         
-         <Carousel/>
-          
+
+          <Carousel />
         </div>
       </div>
       <div className="credits flex justify-center items-center bg-surface font-bold pb-3 dark:bg-surface2 dark:text-white">

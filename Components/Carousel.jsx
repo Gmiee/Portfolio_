@@ -12,8 +12,8 @@ const Carousel = () => {
 
     return (
         <>
-            <div className='flex gap-4 '> 
-                <Swiper 
+            <div className='flex gap-4'>
+                <Swiper
                     direction={'horizontal'}
                     slidesPerView={1}
                     spaceBetween={30}
