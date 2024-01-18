@@ -36,7 +36,7 @@ const BentoLayout = () => {
 
   return (
     <>
-      <Toaster position="top-right" closeButton />
+      <Toaster position="top-left" closeButton />
 
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4  gap-4 p-5 font-semibold h-full bg-surface dark:bg-surface2 ">
         <div className="border p-4 rounded-2xl h-full bg-white text-bp flex justify-around flex-col col-span-2 max-sm:col-span-1 dark:bg-blk dark:border-0 ">
