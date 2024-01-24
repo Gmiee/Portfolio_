@@ -12,6 +12,7 @@ import { CiCircleMore } from "react-icons/ci";
 import ThemeSwitcher from "../ThemeSwitcher";
 import { Toaster, toast } from "react-hot-toast";
 import Carousel from "@/Components/Carousel";
+import { motion } from "framer-motion";
 
 const showToast = () => {
   toast.custom((t) => (
@@ -29,7 +30,11 @@ const showToast = () => {
   ));
 };
 
-showToast();
+// showToast();
+
+const variants = {
+  visible: { opacity: 1, x: 0, y: 0, scale: 1 },
+};
 const BentoLayout = () => {
   // useEffect(() => {
   // }, []);
@@ -39,7 +44,15 @@ const BentoLayout = () => {
       <Toaster position="top-left" closeButton />
 
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4  gap-4 p-5 font-semibold h-full bg-surface dark:bg-surface2 ">
-        <div className="border p-4 rounded-2xl h-full bg-white text-bp flex justify-around flex-col col-span-2 max-sm:col-span-1 dark:bg-blk dark:border-0 ">
+        <motion.div
+          // animate={{ x: 0, opacity: 1, scale: 1 }}
+          whileHover={{ scale: 1.1 }}
+          initial={{ opacity: 0, scale: 0.5 }}
+          variants={variants}
+          animate="visible"
+          transition={{ duration: 0.5 }}
+          className="border p-4 rounded-2xl h-full bg-white text-bp flex justify-around flex-col col-span-2 max-sm:col-span-1 dark:bg-blk dark:border-0 "
+        >
           <ThemeSwitcher />
           <div className="img flex justify-center items-center h-[70%] flex-col">
             {/* <div className="bg h-auto w-fit bg-bp flex rounded-full p-0"> */}
@@ -65,9 +78,16 @@ const BentoLayout = () => {
               </p>
             </a>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="border p-4 rounded-2xl h-auto max-sm:h-fit max-lg:h-fit col-span-1 max-sm:col-span-1 max-md:h-fit bg-white dark:bg-blk dark:border-0">
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          initial={{ opacity: 0, scale: 0.5 }}
+          variants={variants}
+          animate="visible"
+          transition={{ duration: 0.5 }}
+          className="border p-4 rounded-2xl h-auto max-sm:h-fit max-lg:h-fit col-span-1 max-sm:col-span-1 max-md:h-fit bg-white dark:bg-blk dark:border-0"
+        >
           <div className="skills text-gray8 font-bold text-xl ">
             <p className="dark:text-white">Goals</p>
           </div>
@@ -82,9 +102,16 @@ const BentoLayout = () => {
               Excited to learn new things.
             </p>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="border p-3 rounded-2xl h-auto bg-white flex justify-around flex-col row-span-2 max-lg:col-span-2 max-sm:col-span-1 dark:bg-blk dark:border-0">
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          initial={{ opacity: 0, scale: 0.5 }}
+          variants={variants}
+          animate="visible"
+          transition={{ duration: 0.5 }}
+          className="border p-3 rounded-2xl h-auto bg-white flex justify-around flex-col row-span-2 max-lg:col-span-2 max-sm:col-span-1 dark:bg-blk dark:border-0"
+        >
           <div className="skills text-gray8 font-bold text-xl mb-0 pb-3">
             <p className="dark:text-white">Quick Links</p>
           </div>
@@ -139,10 +166,17 @@ const BentoLayout = () => {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Compartment 3 */}
-        <div className="border rounded-2xl h-fit bg-white col-span-3 max-sm:col-span-1 max-md:col-span-2 max-lg:col-span-2 dark:bg-blk dark:border-0">
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          initial={{ opacity: 0, scale: 0.5 }}
+          variants={variants}
+          animate="visible"
+          transition={{ duration: 0.5 }}
+          className="border rounded-2xl h-fit bg-white col-span-3 max-sm:col-span-1 max-md:col-span-2 max-lg:col-span-2 dark:bg-blk dark:border-0"
+        >
           <div className="latest text-gray8 font-bold text-xl pb-2 p-4">
             <p className="dark:text-white">Recent</p>
           </div>
@@ -205,10 +239,17 @@ const BentoLayout = () => {
           >
             <CiCircleMore style={{ fontSize: "1.3rem" }} />
           </a>
-        </div>
+        </motion.div>
 
         {/* Compartment 4 */}
-        <div className="border p-4 rounded-2xl h-auto col-span-2 max-sm:col-span-1 bg-white flex justify-between flex-col dark:bg-blk dark:border-0">
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          initial={{ opacity: 0, scale: 0.5 }}
+          variants={variants}
+          animate="visible"
+          transition={{ duration: 0.5 }}
+          className="border p-4 rounded-2xl h-auto col-span-2 max-sm:col-span-1 bg-white flex justify-between flex-col dark:bg-blk dark:border-0"
+        >
           <div className="skills text-gray8 dark:text-white font-bold text-xl pb-2">
             <p>Skills</p>
           </div>
@@ -274,7 +315,14 @@ const BentoLayout = () => {
               </div>
             </div> */}
 
-            <div className="programming my-1 ">
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              initial={{ opacity: 0, scale: 0.5 }}
+              variants={variants}
+              animate="visible"
+              transition={{ duration: 0.5 }}
+              className="programming my-1 "
+            >
               <p className="dark:text-white">Programming:</p>
               <div className="flex flex-wrap justify-center mt-4 gap-3 uppercase">
                 <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold">
@@ -284,7 +332,7 @@ const BentoLayout = () => {
                   PYTHON
                 </p>
               </div>
-            </div>
+            </motion.div>
 
             <div className="certificate my-1 ">
               <p className="dark:text-white">Certification:</p>
@@ -312,15 +360,22 @@ const BentoLayout = () => {
               Note: All of these are self-taught.🚀
             </p>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="others bg-white text-bp dark:bg-blk dark:text-white col-span-2 rounded-2xl max-sm:col-span-1 p-3 h-fit">
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          initial={{ opacity: 0, scale: 0.5 }}
+          variants={variants}
+          animate="visible"
+          transition={{ duration: 0.5 }}
+          className="others bg-white text-bp dark:bg-blk dark:text-white col-span-2 rounded-2xl max-sm:col-span-1 p-3 h-fit"
+        >
           <div className="skills text-gray8 dark:text-white font-bold text-xl pb-2">
             <p>Other</p>
           </div>
 
           <Carousel />
-        </div>
+        </motion.div>
       </div>
       <div className="credits flex justify-center items-center bg-surface font-bold pb-3 dark:bg-surface2 dark:text-white">
         <p>
