@@ -111,14 +111,7 @@ const BentoLayout = () => {
           </div>
         </div>
 
-        <div
-          // whileHover={{ scale: 1.1 }}
-          initial={{ opacity: 0, scale: 0.5 }}
-          variants={variants}
-          animate="visible"
-          transition={{ duration: 0.5 }}
-          className="border p-4 rounded-2xl h-auto max-sm:h-fit max-lg:h-fit col-span-2 max-sm:col-span-1 max-md:h-fit bg-white dark:bg-blk dark:border-0"
-        >
+        <div className="border p-4 rounded-2xl h-auto max-sm:h-fit max-lg:h-fit col-span-2 max-sm:col-span-1 max-md:h-fit bg-white dark:bg-blk dark:border-0">
           <div className="skills text-gray8 font-bold text-xl">
             <p className="dark:text-white">Goals</p>
           </div>
@@ -135,14 +128,7 @@ const BentoLayout = () => {
           </div>
         </div>
 
-        <div
-          // whileHover={{ scale: 1.1 }}
-          initial={{ opacity: 0, scale: 0.5 }}
-          variants={variants}
-          animate="visible"
-          transition={{ duration: 0.5 }}
-          className="border p-3 rounded-2xl h-auto bg-white flex justify-around flex-col row-span-2 max-lg:col-span-2 max-sm:col-span-1 dark:bg-blk dark:border-0"
-        >
+        <div className="border p-3 rounded-2xl h-auto bg-white flex justify-around flex-col row-span-2 max-lg:col-span-2 max-sm:col-span-1 dark:bg-blk dark:border-0">
           <div className="skills text-gray8 font-bold text-xl mb-0 pb-3">
             <p className="dark:text-white">Links</p>
           </div>
@@ -274,14 +260,7 @@ const BentoLayout = () => {
         </div>
 
         {/* Compartment 4 */}
-        <div
-          // whileHover={{ scale: 1.1 }}
-          initial={{ opacity: 0, scale: 0.5 }}
-          variants={variants}
-          animate="visible"
-          transition={{ duration: 0.5 }}
-          className="border p-4 rounded-2xl h-auto col-span-2 max-sm:col-span-1 bg-white flex justify-between flex-col dark:bg-blk dark:border-0"
-        >
+        <div className="border p-4 rounded-2xl h-auto col-span-2 max-sm:col-span-1 bg-white flex justify-between flex-col dark:bg-blk dark:border-0">
           <div className="skills text-gray8 dark:text-white font-bold text-xl pb-2">
             <p>Skills</p>
           </div>
@@ -303,12 +282,7 @@ const BentoLayout = () => {
               })}
             </div>
 
-            <div
-              variants={variants}
-              animate="visible"
-              transition={{ duration: 0.5 }}
-              className="programming my-1 "
-            >
+            <div className="programming my-1 ">
               <p className="dark:text-white">Programming:</p>
               <div className="flex flex-wrap justify-center mt-4 gap-3 uppercase">
                 <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold">
@@ -347,21 +321,24 @@ const BentoLayout = () => {
             </p>
           </div>
         </div>
-
-        <div
-          // whileHover={{ scale: 1.1 }}
-          initial={{ opacity: 0, scale: 0.5 }}
-          variants={variants}
-          animate="visible"
-          transition={{ duration: 0.5 }}
-          className="others bg-white text-bp dark:bg-blk dark:text-white col-span-2 rounded-2xl max-sm:col-span-1 p-3 h-fit"
-        >
+        {/* Compartment 5 */}
+        <div className="others bg-white text-bp dark:bg-blk dark:text-white col-span-2 rounded-2xl max-sm:col-span-1 p-4 h-fit">
+          <div className="skills text-gray8 dark:text-white font-bold text-xl pb-2 p-3">
+            <p>Blogs</p>
+          </div>
+          <div className="flex justify-start items-center p-1.5">
+            <a href="https://jenishh.notion.site/TypeScript-main-Concepts-9fade6f18055458dbebd496759117dbc">
+              <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white  hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-blk font-semibold ">TypeScript Tutorial by Jenish Khemnani</p>
+            </a>
+          </div>
+          <div className="others bg-white text-bp dark:bg-blk dark:text-white col-span-2 rounded-2xl max-sm:col-span-1 p-3 h-fit">
           <div className="skills text-gray8 dark:text-white font-bold text-xl pb-2">
             <p>Other</p>
           </div>
-
           <Carousel />
         </div>
+        </div>
+        
       </div>
       <div className="credits flex justify-center items-center bg-surface font-bold pb-3 dark:bg-surface2 dark:text-white">
         <p>
