@@ -289,6 +289,9 @@ const BentoLayout = () => {
                   JAVASCRIPT
                 </p>
                 <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold">
+                  TYPESCRIPT
+                </p>
+                <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold">
                   PYTHON
                 </p>
               </div>
@@ -322,16 +325,16 @@ const BentoLayout = () => {
           </div>
         </div>
         {/* Compartment 5 */}
-        <div className="others bg-white text-bp dark:bg-blk dark:text-white col-span-2 rounded-2xl max-sm:col-span-1 p-4 h-fit">
-          <div className="skills text-gray8 dark:text-white font-bold text-xl pb-2 p-3">
+        <div className="others bg-white text-bp dark:bg-blk dark:text-white col-span-2 rounded-2xl max-sm:col-span-1 p-4 h-full flex flex-col justify-between">
+          <div className="skills text-gray8 dark:text-white font-bold text-xl p-3">
             <p>Blogs</p>
           </div>
-          <div className="flex justify-start items-center p-1.5">
+          <div className="flex justify-start p-2 mb-10 items-center ">
             <a href="https://jenishh.notion.site/TypeScript-main-Concepts-9fade6f18055458dbebd496759117dbc">
-              <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white  hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-blk font-semibold ">TypeScript Tutorial by Jenish Khemnani</p>
+              <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-blk font-semibold ">Typescript Tutorial by Jenish Khemnani</p>
             </a>
           </div>
-          <div className="others bg-white text-bp dark:bg-blk dark:text-white col-span-2 rounded-2xl max-sm:col-span-1 p-3 h-fit">
+          <div className="others bg-white text-bp dark:bg-blk dark:text-white col-span-2 rounded-2xl max-sm:col-span-1 p-3 ">
           <div className="skills text-gray8 dark:text-white font-bold text-xl pb-2">
             <p>Other</p>
           </div>
