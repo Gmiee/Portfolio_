@@ -11,7 +11,41 @@ import { CiCircleMore } from "react-icons/ci";
 import ThemeSwitcher from "../ThemeSwitcher";
 import { Toaster, toast } from "react-hot-toast";
 import Carousel from "@/Components/Carousel";
-import { motion } from "framer-motion";
+
+const techStack = [
+  {
+    id: 0,
+    skill: "HTML",
+  },
+  {
+    id: 1,
+    skill: "CSS",
+  },
+  {
+    id: 2,
+    skill: "BOOTSTRAP",
+  },
+  {
+    id: 3,
+    skill: "TAILWIND",
+  },
+  {
+    id: 4,
+    skill: "CHAKRA UI",
+  },
+  {
+    id: 5,
+    skill: "REACT. Js",
+  },
+  {
+    id: 6,
+    skill: "NEXT. Js",
+  },
+  {
+    id: 7,
+    skill: "GIT & GITHUB",
+  },
+];
 
 const showToast = () => {
   toast.custom((t) => (
@@ -43,14 +77,12 @@ const BentoLayout = () => {
       <Toaster position="top-left" closeButton />
 
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4  gap-4 p-5 font-semibold h-full bg-surface dark:bg-surface2 ">
-        <motion.div
-          // animate={{ x: 0, opacity: 1, scale: 1 }}
-          // whileHover={{ scale: 1.1 }}
+        <div
           initial={{ opacity: 0, scale: 0.5 }}
           variants={variants}
           animate="visible"
           transition={{ duration: 0.5 }}
-          className="border p-4 rounded-2xl h-full bg-white text-bp flex justify-around flex-col col-span-2 max-sm:col-span-1 dark:bg-blk dark:border-0 "
+          className="border p-4 rounded-2xl h-full bg-white text-bp flex justify-around flex-col col-span-1 max-sm:col-span-1 dark:bg-blk dark:border-0 "
         >
           <ThemeSwitcher />
           <div className="img flex justify-center items-center h-[70%] flex-col">
@@ -77,17 +109,17 @@ const BentoLayout = () => {
               </p>
             </a>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
+        <div
           // whileHover={{ scale: 1.1 }}
           initial={{ opacity: 0, scale: 0.5 }}
           variants={variants}
           animate="visible"
           transition={{ duration: 0.5 }}
-          className="border p-4 rounded-2xl h-auto max-sm:h-fit max-lg:h-fit col-span-1 max-sm:col-span-1 max-md:h-fit bg-white dark:bg-blk dark:border-0"
+          className="border p-4 rounded-2xl h-auto max-sm:h-fit max-lg:h-fit col-span-2 max-sm:col-span-1 max-md:h-fit bg-white dark:bg-blk dark:border-0"
         >
-          <div className="skills text-gray8 font-bold text-xl ">
+          <div className="skills text-gray8 font-bold text-xl">
             <p className="dark:text-white">Goals</p>
           </div>
           <div className="main flex flex-col items-center justify-evenly h-full max-md:text-base max-sm:text-sm">
@@ -101,9 +133,9 @@ const BentoLayout = () => {
               Excited to learn new things.
             </p>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
+        <div
           // whileHover={{ scale: 1.1 }}
           initial={{ opacity: 0, scale: 0.5 }}
           variants={variants}
@@ -112,7 +144,7 @@ const BentoLayout = () => {
           className="border p-3 rounded-2xl h-auto bg-white flex justify-around flex-col row-span-2 max-lg:col-span-2 max-sm:col-span-1 dark:bg-blk dark:border-0"
         >
           <div className="skills text-gray8 font-bold text-xl mb-0 pb-3">
-            <p className="dark:text-white">Quick Links</p>
+            <p className="dark:text-white">Links</p>
           </div>
           <div className="links flex flex-wrap justify-center gap-7 flex-col mx-3 px-1 text-md">
             <div>
@@ -166,10 +198,10 @@ const BentoLayout = () => {
               </a>
             </div> */}
           </div>
-        </motion.div>
+        </div>
 
         {/* Compartment 3 */}
-        <motion.div
+        <div
           // whileHover={{ scale: 1.1 }}
           initial={{ opacity: 0, scale: 0.5 }}
           variants={variants}
@@ -239,10 +271,10 @@ const BentoLayout = () => {
           >
             <CiCircleMore style={{ fontSize: "1.3rem" }} />
           </a>
-        </motion.div>
+        </div>
 
         {/* Compartment 4 */}
-        <motion.div
+        <div
           // whileHover={{ scale: 1.1 }}
           initial={{ opacity: 0, scale: 0.5 }}
           variants={variants}
@@ -258,66 +290,20 @@ const BentoLayout = () => {
 
             <div className="technologies flex flex-wrap justify-center mt-4 gap-3 uppercase ">
               {/* Skills content */}
-              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold  ">
-                HTML & CSS
-              </p>
-              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold">
-                TAILWIND
-              </p>
-              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold">
-                BOOTSTRAP
-              </p>
-              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold">
-                chakra ui
-              </p>
-              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold">
-                REACT JS
-              </p>
-              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold">
-                NEXT JS
-              </p>
-              {/* <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-               EXPRESS JS
-              </p>
-              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-               PHP
-              </p>
-              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-               MY SQL
-              </p> 
-              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold">
-               NODE JS
-              </p> */}
-              <p className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold">
-                GIT & GITHUB
-              </p>
+
+              {techStack.map((item, id) => {
+                return (
+                  <p
+                    key={id}
+                    className="bg-gray-100 rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-white dark:hover:text-blk font-semibold  "
+                  >
+                    {item.skill}
+                  </p>
+                );
+              })}
             </div>
 
-            {/* <div className="MERN my-1 ">
-              <p>MERN Stack:</p>
-              <div className="flex flex-wrap justify-center mt-4 gap-3 ">
-               
-                  <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold capitalize">
-                    MongoDB{" "}
-                  </p>
-                
-                  <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold capitalize">
-                    ExpressJs
-                  </p>
-
-                  <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold capitalize">
-                  ReactJs
-                  </p>
-
-                  <p className="bg-gray-100 w-fit rounded-xl text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 font-semibold capitalize">
-                    NodeJs
-                  </p>
-              </div>
-            </div> */}
-
-            <motion.div
-              // whileHover={{ scale: 1.1 }}
-              initial={{ opacity: 0, scale: 0.5 }}
+            <div
               variants={variants}
               animate="visible"
               transition={{ duration: 0.5 }}
@@ -332,7 +318,7 @@ const BentoLayout = () => {
                   PYTHON
                 </p>
               </div>
-            </motion.div>
+            </div>
 
             <div className="certificate my-1 ">
               <p className="dark:text-white">Certification:</p>
@@ -360,9 +346,9 @@ const BentoLayout = () => {
               Note: All of these are self-taught.🚀
             </p>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
+        <div
           // whileHover={{ scale: 1.1 }}
           initial={{ opacity: 0, scale: 0.5 }}
           variants={variants}
@@ -375,7 +361,7 @@ const BentoLayout = () => {
           </div>
 
           <Carousel />
-        </motion.div>
+        </div>
       </div>
       <div className="credits flex justify-center items-center bg-surface font-bold pb-3 dark:bg-surface2 dark:text-white">
         <p>
