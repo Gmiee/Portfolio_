@@ -330,8 +330,8 @@ const BentoLayout = () => {
             <p>Blogs</p>
           </div>
           <div className="flex justify-start p-2 mb-10 items-center ">
-            <a href="https://jenishh.notion.site/TypeScript-main-Concepts-9fade6f18055458dbebd496759117dbc">
-              <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-blk font-semibold ">Typescript Tutorial by Jenish Khemnani</p>
+            <a href="https://jenishh.notion.site/TypeScript-main-Concepts-9fade6f18055458dbebd496759117dbc" target="_blank">
+              <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-blk font-semibold ">Typescript Tutorial</p>
             </a>
           </div>
           <div className="others bg-white text-bp dark:bg-blk dark:text-white col-span-2 rounded-2xl max-sm:col-span-1 p-3 ">
