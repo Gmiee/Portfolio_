@@ -38,7 +38,7 @@ const Carousel = () => {
 
                 <div className="txt flex flex-wrap p-2 items-center">
                     We are currently conducting a humble initiative to provide meals for those in need.
-                    <button className='bg-surface rounded-lg text-bp px-4 py-2 hover:bg-white dark:bg-black dark:text-white dark:hover:bg-blk flex justify-center gap-1 capitalize'>
+                    <button className='bg-surface rounded-lg text-bp px-4 py-2 hover:bg-white dark:bg-black dark:text-white dark:hover:bg-blk flex justify-center gap-1 capitalize my-3'>
                         <a href='https://annapurnaa.in/' target='_blank'>
                             Join us now
                         </a>
