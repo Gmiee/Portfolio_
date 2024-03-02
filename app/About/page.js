@@ -125,7 +125,25 @@ const BentoLayout = () => {
             <div>
               <a href="https://jimmyyy.bio.link/" target="_blank">
                 <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md  px-5 py-3 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
-                <FaRocket /> Projects
+                  <FaRocket /> Projects
+                </p>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.linkedin.com/in/jenish-khemnani-b2ab31233/"
+                target="_blank"
+              >
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md  px-5 py-3 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
+                  <FaLinkedin /> LinkedIn
+                </p>
+              </a>
+            </div>
+
+            <div>
+              <a href="mailto:gmieee23@gmail.com">
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md  px-5 py-3 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
+                  <IoMail /> Mail
                 </p>
               </a>
             </div>
@@ -139,24 +157,7 @@ const BentoLayout = () => {
                 </p>
               </a>
             </div>
-            <div>
-              <a href="mailto:gmieee23@gmail.com">
-                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md  px-5 py-3 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
-                  <IoMail /> Mail
-                </p>
-              </a>
-            </div>
 
-            <div>
-              <a
-                href="https://www.linkedin.com/in/jenish-khemnani-b2ab31233/"
-                target="_blank"
-              >
-                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md  px-5 py-3 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
-                  <FaLinkedin /> LinkedIn
-                </p>
-              </a>
-            </div>
             {/* <div>
               <a href="https://instagram.com/jimmmyyy_23" target="_blank">
                 <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md  px-5 py-1 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
