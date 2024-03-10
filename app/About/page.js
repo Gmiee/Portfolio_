@@ -77,13 +77,7 @@ const BentoLayout = () => {
       <Toaster position="top-left" closeButton />
 
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4  gap-4 p-5 font-semibold h-full bg-surface dark:bg-surface2 ">
-        <div
-          initial={{ opacity: 0, scale: 0.5 }}
-          variants={variants}
-          animate="visible"
-          transition={{ duration: 0.5 }}
-          className="border p-4 rounded-2xl h-full bg-white text-bp flex justify-around flex-col col-span-1 max-sm:col-span-1 dark:bg-blk dark:border-0 "
-        >
+        <div className="border p-4 rounded-2xl h-full bg-white text-bp flex justify-around flex-col col-span-1 max-sm:col-span-1 dark:bg-blk dark:border-0 ">
           <ThemeSwitcher />
           <div className="img flex justify-center items-center h-[70%] flex-col">
             {/* <div className="bg h-auto w-fit bg-bp flex rounded-full p-0"> */}
@@ -99,7 +93,7 @@ const BentoLayout = () => {
             <p className="text-3xl text-bp font-bold dark:text-white">
               Jenish Khemnani
             </p>
-            <p className="uppercase text-xl text-gray8 ">web dev</p>
+            <p className="text-lg text-gray8 ">Frontend Web Dev</p>
           </div>
           <div className="statusOfWork flex items-center justify-center mt-2 gap-3 bg-green-100 hover:bg-avail px-5 py-2 w-fit m-auto rounded-full">
             <p className="h-3 w-3 rounded-lg bg-avail hover:none transition duration-300 ease-in-out "></p>
@@ -330,18 +324,22 @@ const BentoLayout = () => {
             <p>Blogs</p>
           </div>
           <div className="flex justify-start p-2 mb-10 items-center ">
-            <a href="https://jenishh.notion.site/TypeScript-main-Concepts-9fade6f18055458dbebd496759117dbc" target="_blank">
-              <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-blk font-semibold ">Typescript Tutorial</p>
+            <a
+              href="https://jenishh.notion.site/TypeScript-main-Concepts-9fade6f18055458dbebd496759117dbc"
+              target="_blank"
+            >
+              <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-blk font-semibold ">
+                Typescript Tutorial
+              </p>
             </a>
           </div>
           <div className="others bg-white text-bp dark:bg-blk dark:text-white col-span-2 rounded-2xl max-sm:col-span-1 p-3 ">
-          <div className="skills text-gray8 dark:text-white font-bold text-xl pb-2">
-            <p>Other</p>
+            <div className="skills text-gray8 dark:text-white font-bold text-xl pb-2">
+              <p>Other</p>
+            </div>
+            <Carousel />
           </div>
-          <Carousel />
         </div>
-        </div>
-        
       </div>
       <div className="credits flex justify-center items-center bg-surface font-bold pb-3 dark:bg-surface2 dark:text-white">
         <p>
