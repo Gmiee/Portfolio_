@@ -8,7 +8,7 @@ import localFont from "next/font/local";
 
 const myFont = localFont({
   subsets: ["latin"],
-  src: "./fonts/Satoshi-Regular.ttf",
+  src: "./fonts/Satoshi-Regular.ttf"
 });
 export const metadata = {
   title: "Jenish Khemnani's Portfolio!  ",
