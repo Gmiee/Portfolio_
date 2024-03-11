@@ -1,7 +1,6 @@
 "use client"
 import React from 'react';
-import { MdOutlineLightMode } from "react-icons/md";
-import { MdOutlineDarkMode } from "react-icons/md";
+import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 import { useTheme } from 'next-themes';
 import { useState, useEffect } from 'react';
 const ThemeSwitcher = () => {
