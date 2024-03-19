@@ -36,7 +36,7 @@ const ThemeSwitcher = () => {
                 </button>
             </div> */}
 
-            <div className='flex'>
+            <div className='flex text-xl'>
                 <button className='dark:text-white' onClick={() => setTheme('light')}><MdOutlineLightMode /></button>
                 <button className='dark:text-white' onClick={() => setTheme('dark')}><MdOutlineDarkMode /></button>
             </div>
