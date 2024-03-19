@@ -95,30 +95,30 @@ const BentoLayout = () => {
             </p>
             <p className="text-lg text-gray8 ">Frontend Web Dev</p>
           </div>
-          <div className="statusOfWork flex items-center justify-center mt-2 gap-3 bg-green-100 hover:bg-avail px-5 py-2 w-fit m-auto rounded-full">
-            <p className="h-3 w-3 rounded-lg bg-avail hover:none transition duration-300 ease-in-out "></p>
+          <div className="statusOfWork flex items-center justify-center mt-2 gap-3 bg-avail px-5 py-2 w-fit m-auto rounded-full">
             <a href="mailto:gmieee23@gmail.com">
-              <p className="text-md font-semibold text-avail transition duration-300 ease-in hover:text-white hover:-translate-x-3">
-                Available
-              </p>
+              <p className="text-md font-semibold text-white">Available</p>
             </a>
           </div>
         </div>
 
         <div className="border p-4 rounded-2xl h-auto max-sm:h-fit max-lg:h-fit col-span-2 max-sm:col-span-1 max-md:h-fit bg-white dark:bg-blk dark:border-0">
           <div className="skills text-gray8 font-bold text-xl">
-            <p className="dark:text-white">Goals</p>
+            <p className="dark:text-white">About</p>
           </div>
           <div className="main flex flex-col items-center justify-evenly h-full max-md:text-base max-sm:text-sm">
             <p className="text-center text-gray8 dark:text-white">
-              Passionate Student and Developer,
+              Welcome to Jenish Khemnani's portfolio!
             </p>
             <p className="text-center text-bp dark:text-white">
-              On a road to become MERN Stack Dev by the end of 2024!
+              Jenish is a skilled Frontend web developer specializing in
+              JavaScript and React.js. Explore his projects and expertise to
+              discover innovative solutions for your web development needs.
             </p>
-            <p className="text-center text-gray8 dark:text-white">
-              Excited to learn new things.
-            </p>
+
+            <i className="text-center text-gray8 dark:text-white">
+              Excited to learn new things
+            </i>
           </div>
         </div>
 
