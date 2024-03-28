@@ -193,7 +193,7 @@ const BentoLayout = () => {
             <p className="dark:text-white">Recent</p>
           </div>
           <div className="recent p-5 flex flex-wrap gap-3 justify-center">
-            <p className="bg-red-600 rounded-xl w-fit text-sm p-3 hover:bg-white  hover:text-red-600 cursor-pointer text-white dark:text-white dark:bg-red-600 dark:hover:bg-blk dark:hover:text-red-600  font-semibold ">
+            <p className="bg-red-500 rounded-xl w-fit text-sm p-3 hover:bg-white  hover:text-red-500 cursor-pointer text-white dark:text-white dark:bg-red-500 dark:hover:bg-blk dark:hover:text-red-500  font-semibold ">
               <a
                 href="https://lazyy-chatt.vercel.app/"
                 target="_blank"
