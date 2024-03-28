@@ -193,17 +193,27 @@ const BentoLayout = () => {
             <p className="dark:text-white">Recent</p>
           </div>
           <div className="recent p-5 flex flex-wrap gap-3 justify-center">
-            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white  hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-blk  font-semibold ">
+            <p className="bg-red-600 rounded-xl w-fit text-sm p-3 hover:bg-white  hover:text-red-600 cursor-pointer text-white dark:text-white dark:bg-red-600 dark:hover:bg-blk dark:hover:text-red-600  font-semibold ">
               <a
-                href="https://github.com/Gmiee/Socket.io"
+                href="https://lazyy-chatt.vercel.app/"
                 target="_blank"
                 className="flex items-center gap-2 "
               >
-                <FaGithub style={{ fontSize: "1rem" }} /> Private chat Web-app
-                <sup>New</sup>
+                LazyyChatt-(Chat App) <sup>New</sup>{" "}
+                <GoArrowUpRight style={{ fontSize: "1.2rem" }} />
               </a>
             </p>
-            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-blk   font-semibold">
+            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white  hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-blk  font-semibold ">
+              <a
+                href="https://khufiya-baatein.vercel.app/"
+                target="_blank"
+                className="flex items-center gap-2 "
+              >
+                Private chat Web-app <sup>New</sup>{" "}
+                <GoArrowUpRight style={{ fontSize: "1.2rem" }} />
+              </a>
+            </p>
+            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-blk font-semibold">
               <a
                 href="https://github.com/Gmiee/Automated-msg-in-whatsapp"
                 target="_blank"
@@ -220,7 +230,7 @@ const BentoLayout = () => {
                 className="flex items-center gap-2"
               >
                 <FaGithub style={{ fontSize: "1rem" }} /> Roll the dice game
-                using python <sup>New</sup>
+                using python
               </a>
             </p>
 
