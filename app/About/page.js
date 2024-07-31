@@ -11,6 +11,7 @@ import { CiCircleMore } from "react-icons/ci";
 import ThemeSwitcher from "../ThemeSwitcher";
 import { Toaster, toast } from "react-hot-toast";
 import Carousel from "@/Components/Carousel";
+import { LiaAmericanSignLanguageInterpretingSolid } from "react-icons/lia";
 
 const techStack = [
   {
@@ -93,11 +94,11 @@ const BentoLayout = () => {
             <p className="text-3xl text-bp font-bold dark:text-white">
               Jenish Khemnani
             </p>
-            <p className="text-lg text-gray8 ">Frontend Web Dev</p>
+            {/* <p className="text-lg text-gray8 ">Frontend Web Dev</p> */}
           </div>
-          <div className="statusOfWork flex items-center justify-center mt-2 gap-3 bg-avail px-5 py-2 w-fit m-auto rounded-full">
+          <div className="statusOfWork flex items-center justify-center mt-2 gap-3 bg-red-500 px-5 py-2 w-fit m-auto rounded-full">
             <a href="mailto:gmieee23@gmail.com">
-              <p className="text-md font-semibold text-white">Available</p>
+              <p className="text-md font-semibold text-white">Unavailable</p>
             </a>
           </div>
         </div>
@@ -122,11 +123,18 @@ const BentoLayout = () => {
           </div>
         </div>
 
-        <div className="border p-3 rounded-2xl h-auto bg-white flex justify-around flex-col row-span-2 max-lg:col-span-2 max-sm:col-span-1 dark:bg-blk dark:border-0">
+        <div className="border p-5 rounded-2xl h-auto bg-white flex justify-around flex-col row-span-2 max-lg:col-span-2 max-sm:col-span-1 dark:bg-blk dark:border-0">
           <div className="skills text-gray8 font-bold text-xl mb-0 pb-3">
-            <p className="dark:text-white">Links</p>
+            <p className="dark:text-white">Quick Links</p>
           </div>
           <div className="links flex flex-wrap justify-center gap-7 flex-col mx-3 px-1 text-md">
+            <div>
+              <a href="https://drive.google.com/file/d/1Y2ACikgWA1m3yeeHiaOz4NlSH7hk_7Pu/view?usp=sharing" target="_blank">
+                <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md px-5 py-3 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
+                <LiaAmericanSignLanguageInterpretingSolid fontSize={'25px'} /> Resume
+                </p>
+              </a>
+            </div>
             <div>
               <a href="https://github.com/Gmiee" target="_blank">
                 <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md px-5 py-3 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
@@ -187,13 +195,13 @@ const BentoLayout = () => {
           variants={variants}
           animate="visible"
           transition={{ duration: 0.5 }}
-          className="border rounded-2xl h-fit bg-white col-span-3 max-sm:col-span-1 max-md:col-span-2 max-lg:col-span-2 dark:bg-blk dark:border-0"
+          className="border rounded-2xl h-fit bg-white col-span-2 max-sm:col-span-1 max-md:col-span-2 max-lg:col-span-2 dark:bg-blk dark:border-0"
         >
           <div className="latest text-gray8 font-bold text-xl pb-2 p-4">
             <p className="dark:text-white">Recent</p>
           </div>
           <div className="recent p-5 flex flex-wrap gap-3 justify-center">
-            <p className="bg-red-500 rounded-xl w-fit text-sm p-3 hover:bg-white  hover:text-red-500 cursor-pointer text-white dark:text-white dark:bg-red-500 dark:hover:bg-blk dark:hover:text-red-500  font-semibold ">
+            <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white  hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-blk  font-semibold  ">
               <a
                 href="https://lazyychatt.vercel.app/"
                 target="_blank"
@@ -261,6 +269,37 @@ const BentoLayout = () => {
           >
             <CiCircleMore style={{ fontSize: "1.3rem" }} />
           </a>
+        </div>
+        {/* compartment 4 */}
+        <div
+          // whileHover={{ scale: 1.1 }}
+          initial={{ opacity: 0, scale: 0.5 }}
+          variants={variants}
+          animate="visible"
+          transition={{ duration: 0.5 }}
+          className="border rounded-2xl h-full bg-white col-span-1 max-sm:col-span-1 max-md:col-span-2 max-lg:col-span-2 dark:bg-blk dark:border-0"
+        >
+          <div className="latest font-bold text-xl pb-2 p-4">
+            <p className="dark:text-white text-gray8 ">Experience</p>
+          </div>
+          <div className="recent p-2 flex flex-wrap gap-3 justify-start">
+            <p className=" rounded-xl w-fit text-lg p-2 dark:text-white dark:hover:bg-blk font-semibold ">
+              
+                Jr. Research Executive 
+              
+            </p>
+           <p className="dark:text-white p-2 ">
+           Currently working as Jr. Research Executive with  <a href="https://www.raoconsultants.com/" className="italic text-teal-500 dark:text-yellow-400">Rao Consultants </a>where, I focused on researching potential clients to drive business development.
+           </p>
+          </div>
+
+          <div className="flex justify-center">
+          <p className="dark:text-white p-2 text-lg ">
+            May 2024 - Present
+           </p>
+          </div>
+
+          
         </div>
 
         {/* Compartment 4 */}
