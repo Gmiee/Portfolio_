@@ -75,10 +75,11 @@ const BentoLayout = () => {
 
   return (
     <>
+    
       <Toaster position="top-left" closeButton />
 
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4  gap-4 p-5 font-semibold h-full bg-surface dark:bg-surface2 select-none outline-none">
-        <div className="p-4 rounded-2xl h-full bg-white text-bp flex justify-around flex-col col-span-1 max-sm:col-span-1 dark:bg-blk dark: -0 ">
+        <div className="p-4 rounded-2xl h-full bg-[#8325fd] text-white flex justify-around flex-col col-span-1 max-sm:col-span-1 dark:bg-blk dark: -0 ">
           <ThemeSwitcher />
           <div className="img flex justify-center items-center h-[70%] flex-col">
             {/* <div className="bg h-auto w-fit bg-bp flex rounded-full p-0"> */}
@@ -91,14 +92,14 @@ const BentoLayout = () => {
               priority={false}
             />
             {/* </div> */}
-            <p className="text-3xl text-bp font-bold dark:text-white">
+            <p className="text-3xl text-white font-bold dark:text-white">
               Jenish Khemnani
             </p>
             {/* <p className="text-lg text-gray8 ">Frontend Web Dev</p> */}
           </div>
-          <div className="statusOfWork flex items-center justify-center mt-2 gap-3 bg-red-500 px-5 py-2 w-fit m-auto rounded-full">
+          <div className="statusOfWork flex items-center justify-center mt-2 gap-3 bg-[#ac6efc] px-5 py-2 w-fit m-auto rounded-full">
             <a href="mailto:gmieee23@gmail.com">
-              <p className="text-md font-semibold text-white">Unavailable</p>
+              <p className="text-md font-semibold text-white">Avialable for Freelancing</p>
             </a>
           </div>
         </div>
