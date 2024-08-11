@@ -102,12 +102,12 @@ const BentoLayout = () => {
               <div className="statusOfWork mb-2 bg-gray9 dark:bg-[#343232] px-3 py-1 w-fit rounded-3xl flex items-center gap-3">
                 <div className="greendot h-3 w-3 rounded-xl bg-[#6DD33D]"></div>
                 <a href="mailto:gmieee23@gmail.com">
-                  <p className="text-sm font-semibold flex justify-start text-black dark:text-white">
+                  <p className="text-sm max-sm:text-xs font-semibold flex justify-start text-black dark:text-white">
                     Avialable to work
                   </p>
                 </a>
               </div>
-              <p className="text-3xl text-black font-bold dark:text-white">
+              <p className="text-3xl max-sm:text-sm text-black font-bold dark:text-white">
                 Jenish Khemnani
               </p>
               <div className="flex gap-1">
