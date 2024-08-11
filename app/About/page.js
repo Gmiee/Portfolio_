@@ -12,6 +12,13 @@ import ThemeSwitcher from "../ThemeSwitcher";
 import { Toaster, toast } from "react-hot-toast";
 import Carousel from "@/Components/Carousel";
 import { LiaAmericanSignLanguageInterpretingSolid } from "react-icons/lia";
+import { FaGlobe } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaFlag } from "react-icons/fa6";
+import { FaGraduationCap } from "react-icons/fa";
+import { MdWork } from "react-icons/md";
+import { PiCrownSimpleFill } from "react-icons/pi";
+import { SiGotomeeting } from "react-icons/si";
 
 const techStack = [
   {
@@ -75,13 +82,12 @@ const BentoLayout = () => {
 
   return (
     <>
-    
       <Toaster position="top-left" closeButton />
 
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4  gap-4 p-5 font-semibold h-full bg-surface dark:bg-surface2 select-none outline-none">
-        <div className="p-4 rounded-2xl h-full bg-[#8325fd] text-white flex justify-around flex-col col-span-1 max-sm:col-span-1 dark:bg-blk dark: -0 ">
+        <div className="p-4 rounded-2xl h-full bg-[white] text-balck flex justify-around flex-col col-span-2 max-sm:col-span-1 dark:bg-blk dark: -0 ">
           <ThemeSwitcher />
-          <div className="img flex justify-center items-center h-[70%] flex-col">
+          <div className="img flex justify-start items-start h-[70%]">
             {/* <div className="bg h-auto w-fit bg-bp flex rounded-full p-0"> */}
             <Image
               className=""
@@ -92,19 +98,52 @@ const BentoLayout = () => {
               priority={false}
             />
             {/* </div> */}
-            <p className="text-3xl text-white font-bold dark:text-white">
-              Jenish Khemnani
-            </p>
-            {/* <p className="text-lg text-gray8 ">Frontend Web Dev</p> */}
+            <div className="abtme flex flex-col">
+              <div className="statusOfWork mb-2 bg-gray9 dark:bg-[#343232] px-3 py-1 w-fit rounded-3xl flex items-center gap-3">
+                <div className="greendot h-3 w-3 rounded-xl bg-[#6DD33D]"></div>
+                <a href="mailto:gmieee23@gmail.com">
+                  <p className="text-sm font-semibold flex justify-start text-black dark:text-white">
+                    Avialable to work
+                  </p>
+                </a>
+              </div>
+              <p className="text-3xl text-black font-bold dark:text-white">
+                Jenish Khemnani
+              </p>
+              <div className="flex gap-1">
+                <p className="text-lg flex text-gray8 font-bold dark:text-white">
+                  I'm
+                </p>
+                <p className="text-lg flex text-[#916CE7] font-bold dark:text-white">
+                  Web dev
+                </p>
+              </div>
+              {/* <p className="text-lg text- ">Frontend Web Dev</p> */}
+            </div>
           </div>
-          <div className="statusOfWork flex items-center justify-center mt-2 gap-3 bg-[#ac6efc] px-5 py-2 w-fit m-auto rounded-full">
-            <a href="mailto:gmieee23@gmail.com">
-              <p className="text-md font-semibold text-white">Avialable for Freelancing</p>
-            </a>
+          <div className="location p-3 bg-[#E8E8E8] dark:bg-[#000] rounded-xl flex gap-5 flex-wrap">
+            <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] text-[#916CE7]  w-fit px-4 py-2 rounded-3xl cursor-pointer ">
+              <FaLocationDot className="text-[#916CE7] text-xl" />
+              Ahmedabad, India
+            </p>
+            <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] text-[#916CE7]  w-fit px-4 py-2 rounded-3xl cursor-pointer ">
+              <FaGlobe className="text-[#916CE7] text-lg" /> English & Hindi
+            </p>
+            <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] text-[#916CE7]  w-fit px-4 py-2 rounded-3xl cursor-pointer ">
+              <FaFlag className="text-[#916CE7] text-2xl" /> Web Devloper &
+              Product Designer
+            </p>
+            <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] text-[#916CE7]  w-fit px-4 py-2 rounded-3xl cursor-pointer ">
+              <FaGraduationCap className="text-[#916CE7] text-2xl" /> Silver Oak
+              University 2024
+            </p>
+            <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] text-[#916CE7]  w-fit px-4 py-2 rounded-3xl cursor-pointer ">
+              <MdWork className="text-[#916CE7] text-2xl" /> Rao Consultants
+            </p>
           </div>
         </div>
 
-        <div className="p-4 rounded-2xl h-auto max-sm:h-fit max-lg:h-fit col-span-2 max-sm:col-span-1 max-md:h-fit bg-white dark:bg-blk dark: -0">
+        <div className="p-4 rounded-2xl h-auto max-sm:h-fit max-lg:h-fit col-span-1 max-sm:col-span-1 max-md:h-fit bg-white dark:bg-blk dark: -0">
           <div className="skills text-gray8 font-bold text-xl">
             <p className="dark:text-white">About</p>
           </div>
@@ -124,9 +163,12 @@ const BentoLayout = () => {
           </div>
         </div>
 
-        <div className="  p-5 rounded-2xl h-auto bg-white flex justify-around flex-col row-span-2 max-lg:col-span-2 max-sm:col-span-1 dark:bg-blk dark: -0">
+        <div className="p-5 rounded-2xl h-fit bg-white flex justify-around flex-col row-span-2 max-lg:col-span-2 max-sm:col-span-1 dark:bg-blk dark: -0">
           <div className="skills text-gray8 font-bold text-xl mb-0 pb-3">
-            <p className="dark:text-white">Quick Links</p>
+            <p className="dark:text-white">Follow Me</p>
+            <p className="text-[#999999] dark:text-gray8 text-lg max-sm:text-sm flex justify-start">
+              Online Presence!{" "}
+            </p>
           </div>
           <div className="links flex flex-wrap justify-center gap-7 flex-col mx-3 px-1 text-md">
             <div>
@@ -166,7 +208,7 @@ const BentoLayout = () => {
             </div>
 
             <div>
-              <a href="mailto:gmieee23@gmail.com">
+              <a href="mailto:jenishkhemnani23@outlook.com">
                 <p className="text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md  px-5 py-3 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
                   <IoMail /> Mail
                 </p>
@@ -200,7 +242,7 @@ const BentoLayout = () => {
           variants={variants}
           animate="visible"
           transition={{ duration: 0.5 }}
-          className="  rounded-2xl h-fit bg-white col-span-2 max-sm:col-span-1 max-md:col-span-2 max-lg:col-span-2 dark:bg-blk dark: -0"
+          className="  rounded-2xl h-fit bg-white col-span-1 max-sm:col-span-1 max-md:col-span-2 max-lg:col-span-2 dark:bg-blk dark: -0"
         >
           <div className="latest text-gray8 font-bold text-xl pb-2 p-4">
             <p className="dark:text-white">Recent</p>
@@ -282,7 +324,7 @@ const BentoLayout = () => {
           variants={variants}
           animate="visible"
           transition={{ duration: 0.5 }}
-          className="  rounded-2xl h-full bg-white col-span-1 max-sm:col-span-1 max-md:col-span-2 max-lg:col-span-2 dark:bg-blk dark: -0"
+          className="  rounded-2xl h-full bg-white col-span-2 max-sm:col-span-1 max-md:col-span-2 max-lg:col-span-2 dark:bg-blk dark: -0"
         >
           <div className="latest font-bold text-xl pb-2 p-4">
             <p className="dark:text-white text-gray8 ">Experience</p>
@@ -305,7 +347,35 @@ const BentoLayout = () => {
           </div>
 
           <div className="flex justify-center">
-            <p className="dark:text-white p-2 text-lg ">May 2024 - Present</p>
+            <p className="dark:text-white p-2 text-lg text-gray5 ">
+              May 2024 - Present
+            </p>
+          </div>
+
+          <div className="workTogether">
+            <p className="m-auto flex items-center justify-center bg-gray9 dark:bg-[#343232] w-fit p-3 rounded-full ">
+              <PiCrownSimpleFill className="text-6xl max-sm:text-2xl text-[#916CE7] " />
+            </p>
+            <p className="text-black dark:text-white text-2xl flex justify-center">
+              Lets Work Together
+            </p>
+            <p className="text-[#999999] dark:text-gray8 text-lg max-sm:text-sm flex justify-center">
+              Let's Make Magic Happen Together!{" "}
+            </p>
+            <div className="location p-3 mt-5 bg-[#E8E8E8] dark:bg-[#000] rounded-xl flex gap-5 flex-wrap w-fit max-md:w-fit max-sm:m-4 justify-center m-auto ">
+              <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] text-[#916CE7] w-fit px-4 py-2 rounded-3xl cursor-pointer ">
+                <FaLocationDot className="text-[#916CE7] text-xl" />
+                <a href="mailto:jenishkhemnani23@outlook.com">
+                Mail Me
+                </a>
+              </p>
+              <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] text-[#916CE7] w-fit px-4 py-2 rounded-3xl cursor-pointer ">
+              <SiGotomeeting className="text-[#916CE7] text-xl" />
+                <a href="https://wa.me/+919510553908/">
+                Schedule a Meeting
+                </a>
+              </p>
+            </div>
           </div>
         </div>
 
