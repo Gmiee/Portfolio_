@@ -337,7 +337,7 @@ const BentoLayout = () => {
               Currently working as Jr. Research Executive with{" "}
               <a
                 href="https://www.raoconsultants.com/"
-                className="italic text-teal-500 dark:text-yellow-400"
+                className="italic text-[#916CE7] dark:text-[#916CE7]"
               >
                 Rao Consultants{" "}
               </a>
@@ -354,7 +354,7 @@ const BentoLayout = () => {
 
           <div className="workTogether">
             <p className="m-auto flex items-center justify-center bg-gray9 dark:bg-[#343232] w-fit p-3 rounded-full ">
-              <PiCrownSimpleFill className="text-6xl max-sm:text-2xl text-[#916CE7] " />
+              <PiCrownSimpleFill className="text-4xl max-sm:text-2xl text-[#916CE7] " />
             </p>
             <p className="text-black dark:text-white text-2xl flex justify-center">
               Lets Work Together
