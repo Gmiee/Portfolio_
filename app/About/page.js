@@ -121,24 +121,24 @@ const BentoLayout = () => {
               {/* <p className="text-lg text- ">Frontend Web Dev</p> */}
             </div>
           </div>
-          <div className="location p-3 bg-[#E8E8E8] dark:bg-[#000] rounded-xl flex gap-5 flex-wrap">
-            <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] text-[#916CE7]  w-fit px-4 py-2 rounded-3xl cursor-pointer ">
-              <FaLocationDot className="text-[#916CE7] text-xl" />
+          <div className="location p-3 bg-[#E8E8E8] dark:bg-surface2 rounded-xl flex gap-5 flex-wrap">
+            <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] dark:text-[#fff] text-surface2  w-fit px-4 py-2 rounded-3xl cursor-pointer ">
+              <FaLocationDot className="dark:text-[#fff] text-surface2 text-xl" />
               Ahmedabad, India
             </p>
-            <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] text-[#916CE7]  w-fit px-4 py-2 rounded-3xl cursor-pointer ">
-              <FaGlobe className="text-[#916CE7] text-lg" /> English & Hindi
+            <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] dark:text-[#fff] text-surface2  w-fit px-4 py-2 rounded-3xl cursor-pointer ">
+              <FaGlobe className="dark:text-[#fff] text-surface2 text-xl " /> English & Hindi
             </p>
-            <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] text-[#916CE7]  w-fit px-4 py-2 rounded-3xl cursor-pointer ">
-              <FaFlag className="text-[#916CE7] text-2xl" /> Web Devloper &
+            <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] dark:text-[#fff] text-surface2  w-fit px-4 py-2 rounded-3xl cursor-pointer ">
+              <FaFlag className="dark:text-[#fff] text-surface2 text-xl " /> Web Devloper &
               Product Designer
             </p>
-            <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] text-[#916CE7]  w-fit px-4 py-2 rounded-3xl cursor-pointer ">
-              <FaGraduationCap className="text-[#916CE7] text-2xl" /> Silver Oak
+            <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] dark:text-[#fff] text-surface2  w-fit px-4 py-2 rounded-3xl cursor-pointer ">
+              <FaGraduationCap className="dark:text-[#fff] text-surface2 text-xl" /> Silver Oak
               University 2024
             </p>
-            <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] text-[#916CE7]  w-fit px-4 py-2 rounded-3xl cursor-pointer ">
-              <MdWork className="text-[#916CE7] text-2xl" /> Rao Consultants
+            <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] dark:text-[#fff] text-surface2 w-fit px-4 py-2 rounded-3xl cursor-pointer ">
+              <MdWork className="dark:text-[#fff] text-surface2 text-xl" /> Rao Consultants
             </p>
           </div>
         </div>
