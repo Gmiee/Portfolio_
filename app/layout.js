@@ -4,6 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import Provider from "@/Components/Provider";
 import localFont from "next/font/local";
+import Head from 'next/head';
 // import ThemeSwitcher from './ThemeSwitcher';
 
 const myFont = localFont({
@@ -17,8 +18,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <body style={myFont.style} className={myFont.className}>
+        <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=0.9"/>
+        </Head>
         <ChakraProvider>
           <Provider>
             {/* <ThemeSwitcher /> */}
