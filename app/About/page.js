@@ -84,8 +84,8 @@ const BentoLayout = () => {
     <>
       <Toaster position="top-center" closeButton />
 
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4  gap-4 p-5 font-semibold h-full bg-surface dark:bg-surface2 cursor-glass select-none outline-none">
-        <div className="p-4 rounded-2xl h-full bg-[white] text-balck flex justify-around flex-col col-span-2 max-sm:col-span-1 dark:bg-blk dark: -0 ">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4  gap-4 p-5 font-semibold h-full bg-surface dark:bg-surface2 select-none outline-none">
+        <div className=" p-4 rounded-2xl h-full bg-[white] text-balck flex justify-around flex-col col-span-2 max-sm:col-span-1 dark:bg-blk dark: -0 ">
           <ThemeSwitcher />
           <div className="img flex justify-start items-start h-[70%]">
             {/* <div className="bg h-auto w-fit bg-bp flex rounded-full p-0"> */}
@@ -98,7 +98,7 @@ const BentoLayout = () => {
               priority={false}
             />
             {/* </div> */}
-            <div className="abtme flex flex-col">
+            <div className="abtme flex flex-col ">
               <div className="statusOfWork mb-2 bg-gray9 dark:bg-[#343232] px-3 py-1 w-fit rounded-3xl flex items-center gap-3">
                 <div className="greendot h-3 w-3 rounded-xl bg-[#6DD33D]"></div>
                 <a href="mailto:gmieee23@gmail.com">

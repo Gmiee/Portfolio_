@@ -33,6 +33,7 @@ module.exports = {
         github : 'url("/Cursors/github.png"), auto',
         linkedin : 'url("/Cursors/linkedin.png"), auto',
         github : 'url("/Cursors/github.png"), auto',
+
       },
     },
   },
