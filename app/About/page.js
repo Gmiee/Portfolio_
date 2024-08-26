@@ -64,14 +64,14 @@ const showToast = () => {
     >
       <div className="flex-1 p-3 py-2">
         <p className="text-md font-medium text-gray-900 dark:text-white text-center">
-          👋🏻 Hey There!
+          Welcome to Jenish's Portfolio !
         </p>
       </div>
     </div>
   ));
 };
 
-// showToast();
+showToast();
 
 const variants = {
   visible: { opacity: 1, x: 0, y: 0, scale: 1 },
@@ -82,9 +82,9 @@ const BentoLayout = () => {
 
   return (
     <>
-      <Toaster position="top-left" closeButton />
+      <Toaster position="top-center" closeButton />
 
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4  gap-4 p-5 font-semibold h-full bg-surface dark:bg-surface2 select-none outline-none">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4  gap-4 p-5 font-semibold h-full bg-surface dark:bg-surface2 cursor-custom select-none outline-none">
         <div className="p-4 rounded-2xl h-full bg-[white] text-balck flex justify-around flex-col col-span-2 max-sm:col-span-1 dark:bg-blk dark: -0 ">
           <ThemeSwitcher />
           <div className="img flex justify-start items-start h-[70%]">

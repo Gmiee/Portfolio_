@@ -21,6 +21,9 @@ module.exports = {
       fontWeight: {
         thin: 100,
       },
+      cursor :{
+        custom : 'url("/rocket.png"), auto',
+      },
     },
   },
   plugins: [],
