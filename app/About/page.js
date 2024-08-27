@@ -101,7 +101,7 @@ const BentoLayout = () => {
             <div className="abtme flex flex-col ">
               <div className="statusOfWork mb-2 bg-gray9 dark:bg-[#343232] px-3 py-1 w-fit rounded-3xl flex items-center gap-3">
                 <div className="greendot h-3 w-3 rounded-xl bg-[#6DD33D]"></div>
-                <a href="mailto:gmieee23@gmail.com">
+                <a href="mailto:jenishkhemnani23@outlook.com">
                   <p className="text-sm max-sm:text-xs font-semibold flex justify-start text-black dark:text-white">
                     Avialable to work
                   </p>
