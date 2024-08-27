@@ -85,7 +85,7 @@ const BentoLayout = () => {
       <Toaster position="top-center" closeButton />
 
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4  gap-4 p-5 font-semibold h-full bg-surface dark:bg-surface2 select-none outline-none">
-        <div className=" p-4 rounded-2xl h-full bg-[white] text-balck flex justify-around flex-col col-span-2 max-sm:col-span-1 dark:bg-blk dark: -0 ">
+        <div className="cursor-robot p-4 rounded-2xl h-full bg-[white] text-balck flex justify-around flex-col col-span-2 max-sm:col-span-1 dark:bg-blk dark: -0 ">
           <ThemeSwitcher />
           <div className="img flex justify-start items-start h-[70%]">
             {/* <div className="bg h-auto w-fit bg-bp flex rounded-full p-0"> */}
@@ -143,7 +143,7 @@ const BentoLayout = () => {
           </div>
         </div>
 
-        <div className="p-4 rounded-2xl h-auto max-sm:h-fit max-lg:h-fit col-span-1 max-sm:col-span-1 max-md:h-fit bg-white dark:bg-blk dark: -0">
+        <div className="cursor-robot p-4 rounded-2xl h-auto max-sm:h-fit max-lg:h-fit col-span-1 max-sm:col-span-1 max-md:h-fit bg-white dark:bg-blk dark: -0">
           <div className="skills text-gray8 font-bold text-xl">
             <p className="dark:text-white">About</p>
           </div>
@@ -163,7 +163,7 @@ const BentoLayout = () => {
           </div>
         </div>
 
-        <div className="p-5 rounded-2xl h-full bg-white flex justify-around flex-col row-span-2 max-lg:col-span-2 max-sm:col-span-1 dark:bg-blk dark: -0">
+        <div className="cursor-robot p-5 rounded-2xl h-full bg-white flex justify-around flex-col row-span-2 max-lg:col-span-2 max-sm:col-span-1 dark:bg-blk dark: -0">
           <div className="skills text-gray8 font-bold text-xl mb-0 pb-3">
             <p className="dark:text-white">Follow Me</p>
             <p className="text-[#999999] dark:text-gray8 text-lg max-sm:text-sm flex justify-start">
@@ -256,7 +256,7 @@ const BentoLayout = () => {
           variants={variants}
           animate="visible"
           transition={{ duration: 0.5 }}
-          className="  rounded-2xl h-fit bg-white col-span-1 max-sm:col-span-1 max-md:col-span-2 max-lg:col-span-2 dark:bg-blk dark: -0"
+          className="cursor-robot rounded-2xl h-fit bg-white col-span-1 max-sm:col-span-1 max-md:col-span-2 max-lg:col-span-2 dark:bg-blk dark: -0"
         >
           <div className="latest text-gray8 font-bold text-xl pb-2 p-4">
             <p className="dark:text-white">Recent</p>
@@ -338,7 +338,7 @@ const BentoLayout = () => {
           variants={variants}
           animate="visible"
           transition={{ duration: 0.5 }}
-          className="  rounded-2xl h-full bg-white col-span-2 max-sm:col-span-1 max-md:col-span-2 max-lg:col-span-2 dark:bg-blk dark: -0"
+          className="cursor-robot rounded-2xl h-full bg-white col-span-2 max-sm:col-span-1 max-md:col-span-2 max-lg:col-span-2 dark:bg-blk dark: -0"
         >
           <div className="latest font-bold text-xl pb-2 p-4">
             <p className="dark:text-white text-gray8 ">Experience</p>
@@ -394,7 +394,7 @@ const BentoLayout = () => {
         </div>
 
         {/* Compartment 4 */}
-        <div className="  p-4 rounded-2xl h-auto col-span-2 max-sm:col-span-1 bg-white flex justify-between flex-col dark:bg-blk dark: -0">
+        <div className="cursor-robot p-4 rounded-2xl h-auto col-span-2 max-sm:col-span-1 bg-white flex justify-between flex-col dark:bg-blk dark: -0">
           <div className="skills text-gray8 dark:text-white font-bold text-xl pb-2">
             <p>Skills</p>
           </div>
@@ -459,7 +459,7 @@ const BentoLayout = () => {
           </div>
         </div>
         {/* Compartment 5 */}
-        <div className="others bg-white text-bp dark:bg-blk dark:text-white col-span-2 rounded-2xl max-sm:col-span-1 p-4 h-full flex flex-col justify-between">
+        <div className="cursor-robot others bg-white text-bp dark:bg-blk dark:text-white col-span-2 rounded-2xl max-sm:col-span-1 p-4 h-full flex flex-col justify-between">
           <div className="skills text-gray8 dark:text-white font-bold text-xl p-3">
             <p>Blogs</p>
           </div>
