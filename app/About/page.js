@@ -11,7 +11,7 @@ import { CiCircleMore } from "react-icons/ci";
 import ThemeSwitcher from "../ThemeSwitcher";
 import { Toaster, toast } from "react-hot-toast";
 import Carousel from "@/Components/Carousel";
-import { LiaAmericanSignLanguageInterpretingSolid } from "react-icons/lia";
+import { LiaAmericanSignLanguageInterpretingSolid, LiaLinkedin } from "react-icons/lia";
 import { FaGlobe } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaFlag } from "react-icons/fa6";
@@ -20,6 +20,7 @@ import { MdWork } from "react-icons/md";
 import { PiCrownSimpleFill } from "react-icons/pi";
 import { SiGotomeeting } from "react-icons/si";
 import { BsDiscord } from "react-icons/bs";
+// import Rating from "@/Components/Rating";
 
 const techStack = [
   {
@@ -140,6 +141,8 @@ const BentoLayout = () => {
             <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] dark:text-[#fff] text-surface2 w-fit px-4 py-2 rounded-3xl cursor-pointer ">
               <MdWork className="dark:text-[#fff] text-surface2 text-xl" /> Rao Consultants
             </p>
+            {/* <Rating /> */}
+            
           </div>
         </div>
 
@@ -173,7 +176,7 @@ const BentoLayout = () => {
           <div className="links flex flex-wrap justify-center gap-7 flex-col mx-3 px-1 text-md">
             <div>
               <a
-                href="https://drive.google.com/file/d/1Y2ACikgWA1m3yeeHiaOz4NlSH7hk_7Pu/view?usp=sharing"
+                href="https://drive.google.com/file/d/1MC1aBcgfbN26JtkB7z75YU9w5ckXvLBB/view?usp=sharing"
                 target="_blank"
               >
                 <p className="cursor-resume text-bp flex items-center gap-2 bg-white shadow-sm mb-1 dark:bg-surface2 dark:text-white dark:shadow-md px-5 py-3 rounded-xl hover:translate-x-4 transition duration-200 ease-in-out">
@@ -286,10 +289,9 @@ const BentoLayout = () => {
               <a
                 href="https://github.com/Gmiee/Automated-msg-in-whatsapp"
                 target="_blank"
-                className="flex items-center gap-2 "
+                className="flex items-center gap-1"
               >
-                <FaGithub style={{ fontSize: "1rem" }} />
-                Automating WhatsApp Web Messages with Python<sup>New</sup>
+                Automation WhatsApp Web Messages (Python) <sup>New</sup>
               </a>
             </p>
             <p className="bg-gray-100 rounded-xl w-fit text-sm p-3 hover:bg-white hover:text-black cursor-pointer text-gray-800 dark:text-white dark:bg-surface2 dark:hover:bg-blk   font-semibold ">
@@ -298,7 +300,8 @@ const BentoLayout = () => {
                 target="_blank"
                 className="flex items-center gap-2"
               >
-                <FaGithub style={{ fontSize: "1rem" }} /> Roll the dice game
+                {/* <FaGithub style={{ fontSize: "1rem" }} />  */}
+                Roll the dice game
                 using python
               </a>
             </p>
@@ -387,6 +390,12 @@ const BentoLayout = () => {
                 <SiGotomeeting className="text-[#916CE7] text-xl" />
                 <a className="cursor-meeting" href="https://wa.me/+919510553908/">
                   Schedule a Meeting
+                </a>
+              </p>
+              <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] text-[#916CE7] w-fit px-4 py-2 rounded-3xl cursor-linkedin ">
+                <LiaLinkedin className="text-[#916CE7] text-3xl" />
+                <a className="cursor-meeting" href="https://wa.me/+919510553908/">
+                  Add me on LinkedIn
                 </a>
               </p>
             </div>
