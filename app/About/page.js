@@ -12,7 +12,6 @@ import ThemeSwitcher from "../ThemeSwitcher";
 import { Toaster, toast } from "react-hot-toast";
 import Carousel from "@/Components/Carousel";
 import { LiaAmericanSignLanguageInterpretingSolid, LiaLinkedin } from "react-icons/lia";
-import { FaGlobe } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaFlag } from "react-icons/fa6";
 import { FaGraduationCap } from "react-icons/fa";
@@ -20,6 +19,9 @@ import { MdWork } from "react-icons/md";
 import { PiCrownSimpleFill } from "react-icons/pi";
 import { SiGotomeeting } from "react-icons/si";
 import { BsDiscord } from "react-icons/bs";
+import Button from "@/Components/Button";
+import { RiFolderVideoFill } from "react-icons/ri";
+
 // import Rating from "@/Components/Rating";
 
 const techStack = [
@@ -65,7 +67,7 @@ const showToast = () => {
     >
       <div className="flex-1 p-3 py-2">
         <p className="text-md font-medium text-gray-900 dark:text-white text-center">
-          Welcome to Jenish's Portfolio !
+          Welcome to My Portfolio !
         </p>
       </div>
     </div>
@@ -127,12 +129,17 @@ const BentoLayout = () => {
               <FaLocationDot className="dark:text-[#fff] text-surface2 text-xl" />
               Ahmedabad, India
             </p>
-            <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] dark:text-[#fff] text-surface2  w-fit px-4 py-2 rounded-3xl cursor-pointer ">
+            {/* <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] dark:text-[#fff] text-surface2  w-fit px-4 py-2 rounded-3xl cursor-pointer ">
               <FaGlobe className="dark:text-[#fff] text-surface2 text-xl " /> English & Hindi
-            </p>
+            </p> */}
             <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] dark:text-[#fff] text-surface2  w-fit px-4 py-2 rounded-3xl cursor-pointer ">
               <FaFlag className="dark:text-[#fff] text-surface2 text-xl " /> Web Devloper &
               Product Designer
+            </p>
+            <p className="flex items-center gap-1 bg-[#916CE7] dark:bg-[#916CE7] dark:text-[#fff] text-surface  w-fit px-4 py-2 rounded-3xl cursor-pointer ">
+              <Button />
+              <RiFolderVideoFill className="dark:text-[#fff] text-[#fff] text-xl " />
+
             </p>
             <p className="flex items-center gap-1 bg-[#F8F8F8] dark:bg-[#343232] dark:text-[#fff] text-surface2  w-fit px-4 py-2 rounded-3xl cursor-pointer ">
               <FaGraduationCap className="dark:text-[#fff] text-surface2 text-xl" /> Silver Oak
@@ -142,7 +149,7 @@ const BentoLayout = () => {
               <MdWork className="dark:text-[#fff] text-surface2 text-xl" /> Rao Consultants
             </p>
             {/* <Rating /> */}
-            
+
           </div>
         </div>
 
@@ -489,6 +496,7 @@ const BentoLayout = () => {
                 Lets play GTA V
               </p>
             </a>
+            
           </div>
           <div className="others bg-white text-bp dark:bg-blk dark:text-white col-span-2 rounded-2xl max-sm:col-span-1 p-3 ">
             <div className="skills text-gray8 dark:text-white font-bold text-xl pb-2">
