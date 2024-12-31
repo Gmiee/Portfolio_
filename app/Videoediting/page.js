@@ -9,11 +9,11 @@ const page = () => {
         <div className="p-4 rounded-2xl bg-[white] text-black flex justify-around flex-col h-full lg:h-screen col-span-4 max-sm:col-span-1 dark:bg-blk">
           <ThemeSwitcher />
           <div className="img flex justify-center underline items-start text-4xl dark:text-[#fff] py-5">
-            About Me!
+            {/* About Me! */}
           </div>
-          <div className="flex flex-wrap gap-5  justify-center">
+          <div className="flex flex-wrap gap-5 justify-center">
             <video
-              src="/videos/002.mp4"
+              src="/videos/001.mp4"
               className="aspect-[9/16] rounded-md w-full sm:w-[30%] lg:w-[20%]"
               controls
               autoPlay
@@ -29,21 +29,21 @@ const page = () => {
               style={{ backgroundColor: 'transparent' }}
             />
             <video
-              src="/videos/002.mp4"
+              src="/videos/003.mp4"
               className="aspect-[9/16] rounded-md w-full sm:w-[48%] lg:w-[20%]"
               controls
               autoPlay
               muted
               style={{ backgroundColor: 'transparent' }}
             />
-            <video
+            {/* <video
               src="/videos/002.mp4"
               className="aspect-[9/16] rounded-md w-full sm:w-[48%] lg:w-[20%]"
               controls
               autoPlay
               muted
               style={{ backgroundColor: 'transparent' }}
-            />
+            /> */}
           </div>
         </div>
 
