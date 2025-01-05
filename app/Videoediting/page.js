@@ -2,54 +2,106 @@
 import React from "react";
 import ThemeSwitcher from "../ThemeSwitcher";
 
-const page = () => {
+const Page = () => {
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-4 p-5 font-semibold bg-surface dark:bg-surface2 select-none outline-none">
-        <div className="p-4 rounded-2xl bg-[white] text-black flex justify-around flex-col h-full lg:h-screen col-span-4 max-sm:col-span-1 dark:bg-blk">
-          <ThemeSwitcher />
-          <div className="img flex justify-center underline items-start text-4xl dark:text-[#fff] py-5">
-            {/* About Me! */}
-          </div>
-          <div className="flex flex-wrap gap-5 justify-center">
-            <video
-              src="/videos/001.mp4"
-              className="aspect-[9/16] rounded-md w-full sm:w-[30%] lg:w-[20%]"
-              controls
-              autoPlay
-              muted
-              style={{ backgroundColor: 'transparent' }}
-            />
-            <video
-              src="/videos/002.mp4"
-              className="aspect-[9/16] rounded-md l sm:w-[20%] lg:w-[20%]"
-              controls
-              autoPlay
-              muted
-              style={{ backgroundColor: 'transparent' }}
-            />
-            <video
-              src="/videos/003.mp4"
-              className="aspect-[9/16] rounded-md w-full sm:w-[48%] lg:w-[20%]"
-              controls
-              autoPlay
-              muted
-              style={{ backgroundColor: 'transparent' }}
-            />
-            {/* <video
-              src="/videos/002.mp4"
-              className="aspect-[9/16] rounded-md w-full sm:w-[48%] lg:w-[20%]"
-              controls
-              autoPlay
-              muted
-              style={{ backgroundColor: 'transparent' }}
-            /> */}
+      <div className="relative h-screen overflow-hidden bg-surface dark:bg-surface2 select-none outline-none">
+        {/* Background Video */}
+        <video
+          src="https://server-onu2.onrender.com/video/videoBG"
+          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+          autoPlay
+          loop
+          muted
+        />
+
+        {/* Scrollable Content */}
+        <div className="relative z-10 h-full p-5">
+          <div className="p-5 rounded-2xl bg-[transparent] text-black flex flex-col gap-10 dark:bg-[transparent]">
+            <ThemeSwitcher />
+
+            {/* Horizontal Scrolling Section */}
+            <div className="img flex flex-col items-center text-4xl dark:text-[#fff] py-5">
+              <div className="flex gap-5 overflow-x-scroll scrollbar-hide max-sm:overflow-y-scroll max-md:overflow-y-scroll ">
+                <video
+                  src="https://server-onu2.onrender.com/video/"
+                  className="aspect-[9/16] rounded-md w-[300px] flex-shrink-0"
+                  controls
+                  autoPlay
+                  loop
+                  muted
+                  style={{ backgroundColor: "transparent" }}
+                />
+                <video
+                  src="https://server-onu2.onrender.com/video/one"
+                  className="aspect-[9/16] rounded-md w-[300px] flex-shrink-0"
+                  controls
+                  autoPlay
+                  loop
+                  muted
+                  style={{ backgroundColor: "transparent" }}
+                />
+                <video
+                  src="https://server-onu2.onrender.com/video/Christmas"
+                  className="aspect-[9/16] rounded-md w-[300px] flex-shrink-0"
+                  controls
+                  autoPlay
+                  loop
+                  muted
+                  style={{ backgroundColor: "transparent" }}
+                />
+                <video
+                  src="https://server-onu2.onrender.com/video/two"
+                  className="aspect-[9/16] rounded-md w-[300px] flex-shrink-0"
+                  controls
+                  autoPlay
+                  loop
+                  muted
+                  style={{ backgroundColor: "transparent" }}
+                />
+                <video
+                  src="https://server-onu2.onrender.com/video/five"
+                  className="aspect-[9/16] rounded-md w-[300px] flex-shrink-0"
+                  controls
+                  autoPlay
+                  loop
+                  muted
+                  style={{ backgroundColor: "transparent" }}
+                />
+                <video
+                  src="https://server-onu2.onrender.com/video/three"
+                  className="aspect-[9/16] rounded-md w-[300px] flex-shrink-0"
+                  controls
+                  autoPlay
+                  loop
+                  muted
+                  style={{ backgroundColor: "transparent" }}
+                />
+                <video
+                  src="https://server-onu2.onrender.com/video/video1"
+                  className="aspect-[9/16] rounded-md w-[300px] flex-shrink-0"
+                  controls
+                  autoPlay
+                  loop
+                  muted
+                  style={{ backgroundColor: "transparent" }}
+                />
+                <video
+                  src="https://server-onu2.onrender.com/video/002"
+                  className="aspect-[9/16] rounded-md w-[300px] flex-shrink-0"
+                  controls
+                  autoPlay
+                  loop
+                  muted
+                  style={{ backgroundColor: "transparent" }}
+                />
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
     </>
   );
 };
 
-export default page;
+export default Page;

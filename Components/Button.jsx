@@ -5,9 +5,9 @@ import React from 'react';
 const VideoEditingButton = () => {
   return (
     <Link href="/Videoediting" passHref>
-      <a className='' />
-        Video Editing Portfolio
-    
+
+      Video Editing Portfolio
+
     </Link>
   );
 };
